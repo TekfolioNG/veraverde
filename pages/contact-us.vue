@@ -1,13 +1,13 @@
 <template>
   <div class="container mx-auto px-6 py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      <!-- Left Side: Image with Bobbing Effect -->
+      <!-- Left Side: Image with Faster Bobbing Effect -->
       <div class="flex justify-center">
         <img src="~/assets/img/customer-care.png" alt="Customer Care" class="w-full max-w-md animate-bob" />
       </div>
 
       <!-- Right Side: Contact Information and Form -->
-      <div>
+      <div class="mr-4"> <!-- Added margin to the right -->
         <!-- Contact Information Section -->
         <div class="mb-8">
           <div class="flex items-center gap-3 mb-6">
@@ -81,6 +81,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  layout: "landing",
+});
 const formAccessKey = ref('0f124479-05cd-4fcf-a66e-67276a365cbb');
 const isSubmitting = ref(false);
 
@@ -138,10 +141,30 @@ const handleSubmit = async () => {
     isSubmitting.value = false;
   }
 };
+
+  useSeoMeta({
+  title: 'Petabiz Nigeria Ltd | Contact Us',
+  ogTitle: 'Petabiz Nigeria Ltd | Contact Us',
+  titleTemplate: 'Petabiz Nigeria Ltd | Contact Us',
+  description: 'Global OEM Solutions for Enterprise Success.',
+  ogDescription: 'Global OEM Solutions for Enterprise Success',
+
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Petabiz Nigeria Ltd',
+  twitterDescription: 'Global OEM Solutions for Enterprise Success',
+
+  ogImage: {
+    url: 'https://petabiz-telco.com/Sefa_Energy_Ltd.png',
+  width: 1200,
+  height: 630,
+  alt: 'Petabiz Nigeria Ltd - Trsuted Tech Partner'
+    },
+  twitterImage: 'https://petabiz-telco.com/Sefa_Energy_Ltd.png'
+})
+
 </script>
 
 <style>
-/* Bobbing Animation */
 @keyframes bob {
   0% {
     transform: translateY(0);

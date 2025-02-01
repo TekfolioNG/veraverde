@@ -1,7 +1,27 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({
-  layout: "landing",
+    layout: "landing"
 });
+
+useSeoMeta({
+  title: 'Petabiz Nigeria Ltd',
+  ogTitle: 'Petabiz Nigeria Ltd',
+  titleTemplate: 'Petabiz Nigeria Ltd',
+  description: 'Global OEM Solutions for Enterprise Success.',
+  ogDescription: 'Global OEM Solutions for Enterprise Success',
+
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Petabiz Nigeria Ltd',
+  twitterDescription: 'Global OEM Solutions for Enterprise Success',
+
+  ogImage: {
+    url: 'https://petabiz-telco.com/Sefa_Energy_Ltd.png',
+    width: 1200,
+    height: 630,
+    alt: 'Petabiz Nigeria Ltd - Trsuted Tech Partner'
+  },
+  twitterImage: 'https://petabiz-telco.com/Sefa_Energy_Ltd.png'
+})
 </script>
 
 <template>
