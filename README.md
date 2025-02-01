@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nuxtship - Nuxt SAAS Starter Website Template
 
 Nuxtship is a free starter nuxt website template for saas, startups, marketing websites & landing pages. Built with Nuxt & TailwindCSS.
@@ -95,3 +96,6 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 Original Astroship Template: **[https://astroship.web3templates.com/](https://astroship.web3templates.com/)** from **[Web3Templates](https://web3templates.com/)**
 
 Forked from: **[https://github.com/surjithctly/astroship](https://github.com/surjithctly/astroship)**
+=======
+# petabiz-telco
+>>>>>>> 38f07a3292f0a1adbd587a4f2bcb55a38c14f725
