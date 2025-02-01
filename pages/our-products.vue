@@ -216,11 +216,11 @@ useSeoMeta({
     twitterDescription: 'Global OEM Solutions for Enterprise Success',
 
     ogImage: {
-        url: 'https://petabiz-telco.com/Sefa_Energy_Ltd.png',
+        url: 'https://petabiz-telco.com/Petabiz-Telco.png',
         width: 1200,
         height: 630,
         alt: 'Petabiz Nigeria Ltd - Trsuted Tech Partner'
     },
-    twitterImage: 'https://petabiz-telco.com/Sefa_Energy_Ltd.png'
+    twitterImage: 'https://petabiz-telco.com/Petabiz-Telco.png'
 })
 </script>
