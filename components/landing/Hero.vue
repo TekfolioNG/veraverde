@@ -16,9 +16,9 @@
         products to enhance performance, security, and scalability.
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <LandingLink href="https://github.com/Gr33nW33n/nuxtship-template" target="_blank" rel="noopener">Our Products
+        <LandingLink href="/our-products" target="_blank" rel="noopener">Our Products
         </LandingLink>
-        <LandingLink size="lg" styleName="outline" rel="noopener" href="https://github.com/Gr33nW33n/nuxtship-template"
+        <LandingLink size="lg" styleName="outline" rel="noopener" href="/our-services"
           target="_blank">Our Solutions</LandingLink>
       </div>
     </div>
