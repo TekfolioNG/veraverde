@@ -13,8 +13,8 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.4",
     "@tailwindcss/typography": "^0.5.10",
-    "autoprefixer": "^10.4.21",
     "esbuild": "^0.19.5",
+    "autoprefixer": "^10.4.21",
     "nuxt": "^3.15.2",
     "nuxt-icon": "^0.6.8",
     "postcss": "^8.5.3",
@@ -31,6 +31,7 @@
     "tailwindcss": "^4.1.4"
   },
   "engines": {
-    "node": "^18.0.0 || >=20.0.0"
-  }
+  "node": "^18.0.0 || >=20.0.0"
+}
+  
 }
