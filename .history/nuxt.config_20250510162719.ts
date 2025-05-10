@@ -1,7 +1,11 @@
 export default defineNuxtConfig({
   runtimeConfig: {
+    paystackSecretKey: process.env.PAYSTACK_SECRET_KEY,
     web3formsKey: process.env.WEB3FORMS_KEY,
-  
+    public: {
+      paystackPublicKey: process.env.PAYSTACK_PUBLIC_KEY,
+      siteUrl: process.env.SITE_URL || 'http://localhost:3000',
+    },
   },
   css: ["~/assets/css/main.css"],
   postcss: {
