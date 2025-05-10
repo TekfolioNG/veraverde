@@ -1,6 +1,5 @@
 export default defineNuxtConfig({
   runtimeConfig: {
-    ssr: true,
     web3formsKey: process.env.WEB3FORMS_KEY,
   
   },
@@ -20,8 +19,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: "cloudflare-pages",
     output: {
-    publicDir: ".output/public",
-    serverDir: '.output/server'
+      publicDir: ".output/public",
     },
     prerender: {
       failOnError: false,
