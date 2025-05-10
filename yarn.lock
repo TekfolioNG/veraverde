@@ -1358,7 +1358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.17.2, @nuxt/kit@npm:^3.11.1, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.15.0, @nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.16.2, @nuxt/kit@npm:^3.17.1":
+"@nuxt/kit@npm:3.17.2, @nuxt/kit@npm:^3.11.1, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.15.0, @nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.16.2, @nuxt/kit@npm:^3.17.1, @nuxt/kit@npm:^3.17.2":
   version: 3.17.2
   resolution: "@nuxt/kit@npm:3.17.2"
   dependencies:
@@ -8069,6 +8069,7 @@ __metadata:
   resolution: "ppil-website@workspace:."
   dependencies:
     "@lottiefiles/dotlottie-vue": ^0.6.3
+    "@nuxt/kit": ^3.17.2
     "@nuxt/ui": ^3.0.2
     "@paystack/inline-js": ^2.22.2
     "@tailwindcss/postcss": ^4.1.4
@@ -8082,6 +8083,7 @@ __metadata:
     nuxt-icon: ^0.6.8
     postcss: ^8.5.3
     tailwindcss: ^4.1.4
+    typescript: 5.8.3
     vue: ^3.4.3
     vue-router: ^4.2.5
   languageName: unknown
@@ -9411,7 +9413,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.4.4":
+"typescript@npm:5.8.3, typescript@npm:^5.4.4":
   version: 5.8.3
   resolution: "typescript@npm:5.8.3"
   bin:
@@ -9421,7 +9423,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^5.4.4#~builtin<compat/typescript>":
+"typescript@patch:typescript@5.8.3#~builtin<compat/typescript>, typescript@patch:typescript@^5.4.4#~builtin<compat/typescript>":
   version: 5.8.3
   resolution: "typescript@patch:typescript@npm%3A5.8.3#~builtin<compat/typescript>::version=5.8.3&hash=f3b441"
   bin:
