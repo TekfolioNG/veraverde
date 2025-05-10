@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* Import all required fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+}
+
+/* Apply heading fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
+/* Hero specific styling */
+.hero h1,
+.hero-heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+/* Apply custom font classes */
+.font-sans {
+  font-family: "Barlow", sans-serif;
+}
+
+.font-heading {
+  font-family: "Inter", sans-serif;
+}
+
+.font-hero {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-primary {
+  color: #003366;
+}
+
+.bg-primary {
+  background-color: #003366;
+}
+
+.text-primary-dark {
+  color: #002244;
+}
+
+.bg-primary-dark {
+  background-color: #002244;
+}

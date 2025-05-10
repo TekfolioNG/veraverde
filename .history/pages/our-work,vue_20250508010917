@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+<script setup>
+definePageMeta({
+  layout: "landing"
+});
+
+useSeoMeta({
+  title: 'Our Services | PPIL Construction',
+  ogTitle: 'Our Services | PPIL Construction',
+  titleTemplate: 'Our Services | PPIL Construction',
+  description: 'Premium infrastructure services engineered to meet your project needs.',
+  ogDescription: 'Premium infrastructure services engineered to meet your project needs.',
+
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Our Services | PPIL Construction',
+  twitterDescription: 'Premium infrastructure services engineered to meet your project needs.',
+
+  ogImage: {
+    url: 'https://ppil.com/ppil-services.jpg',
+    width: 1200,
+    height: 630,
+    alt: 'PPIL Construction Services - Your Project, Our Mission'
+  },
+  twitterImage: 'https://ppil.com/ppil-services.jpg'
+});
+</script>

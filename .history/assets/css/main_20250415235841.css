@@ -1,0 +1,9 @@
+@import "tailwindcss/preflight"; /* Updated from tailwindcss/base */
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
