@@ -63,7 +63,7 @@ const submitForm = async (event) => {
 
 definePageMeta({
   layout: "landing"
-});
+})
 
 useSeoMeta({
   title: 'Contact Us | Premium Projects Infrastructure Limited',
@@ -84,7 +84,7 @@ useSeoMeta({
   },
   twitterImage: '/PPIL-og-image.png'
 
-});
+})
 </script>
 
 <template>

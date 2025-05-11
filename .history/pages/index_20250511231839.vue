@@ -16,7 +16,7 @@ useHead({
     { name: 'twitter:description', content: 'PPIL | Premium Projects Infrastructure Limited' },
     { name: 'twitter:image', content: 'https://ppil.com.ng/PPIL-og-image.png' }
   ]
-});
+})
 </script>
 
 <template>

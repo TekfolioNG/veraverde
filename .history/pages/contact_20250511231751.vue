@@ -84,7 +84,7 @@ useSeoMeta({
   },
   twitterImage: '/PPIL-og-image.png'
 
-});
+})
 </script>
 
 <template>

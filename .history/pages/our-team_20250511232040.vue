@@ -187,7 +187,7 @@ useHead({
         { property: 'og:image:alt', content: 'Our Team | Premium Projects Infrastructure Limited' },
     { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Our Team | Premium Projects Infrastructure Limited' },
-        { name: 'twitter:description', content: 'Our Team | Premium Projects Infrastructure Limited' },
+    { name: 'twitter:description', content: 'Our Team | Premium Projects Infrastructure Limited' },
     { name: 'twitter:image', content: 'https://ppil.com.ng/PPIL-og-image.png' }
   ]
 });

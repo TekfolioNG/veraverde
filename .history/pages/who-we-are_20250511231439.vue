@@ -381,17 +381,17 @@ definePageMeta({
 });
 
 useHead({
-  meta: [
-    { property: 'og:title', content: 'Who We Are | Premium Projects Infrastructure Limited' },
-    { property: 'og:description', content: 'Excellence & Innovation in Infrastructure.' },
-    { property: 'og:image', content: 'https://ppil.com.ng/PPIL-og-image.png' },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'Who We Are | Premium Projects Infrastructure Limited' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Who We Are | Premium Projects Infrastructure Limited' },
-        { name: 'twitter:description', content: 'Who We Are | Premium Projects Infrastructure Limited' },
-    { name: 'twitter:image', content: 'https://ppil.com.ng/PPIL-og-image.png' }
-  ]
-});
+    meta: [
+        { property: 'og:title', content: 'Contact Us | Premium Projects Infrastructure Limited' },
+        { property: 'og:description', content: 'Excellence & Innovation in Infrastructure.' },
+        { property: 'og:image', content: 'https://ppil.com.ng/PPIL-og-image.png' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'Contact Us | Premium Projects Infrastructure Limited' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Contact Us | Premium Projects Infrastructure Limited' },
+        { name: 'twitter:description', content: 'Contact Us | Premium Projects Infrastructure Limited' },
+        { name: 'twitter:image', content: 'https://ppil.com.ng/PPIL-og-image.png' }
+    ]
+})
 </script>
