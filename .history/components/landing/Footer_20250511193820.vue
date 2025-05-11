@@ -7,7 +7,7 @@
         <div class="md:col-span-4 flex flex-col items-center md:items-start">
           <div class="mb-6">
             <a href="/">
-              <img src="~/assets/img/PPIL Logo.svg" alt="PPIL Logo" class="h-16 md:h-20" />
+              <img src="~/assets/img/PPIL Logo.svg" alt="PPIL Logo" class="h-16 md:h-20 invert" />
             </a>
           </div>
           <p class="text-gray-300 leading-relaxed mb-6 text-center md:text-left">

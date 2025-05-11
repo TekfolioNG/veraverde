@@ -75,7 +75,7 @@
             <div class="container mx-auto px-6 md:px-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12"
                     style="font-family: 'Barlow Condensed', sans-serif;">
-                    Some of Our Project Portfolio
+                    Some of Our Projects Portfolio
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -388,24 +388,24 @@
             </div>
         </section>
         <!-- CTA Section -->
-        <section class="py-8 md:py-10 mb-12">
+        <section class="py-8 md:py-10 pb-12 bg-white dark:bg-[#002244]">
             <div class="container mx-auto px-6 md:px-10 text-center">
-                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4"
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4"
                     style="font-family: 'Barlow Condensed', sans-serif;">
                     Ready to work together?
                 </h3>
-                <p class="text-lg text-gray-900 mb-6 max-w-3xl mx-auto">
-                    Whether you have a project in mind and you’re looking for a reliable construction partner or seeking
+                <p class="text-lg text-gray-900 dark:text-gray-200 mb-6 max-w-3xl mx-auto">
+                    Whether you have a project in mind and you're looking for a reliable construction partner or seeking
                     maintenance solutions,
-                    our team at <b>PPIL</b> is ready to deliver excellence at every stage.
+                    our team at <b class="dark:text-white">PPIL</b> is ready to deliver excellence at every stage.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="/services"
-                        class="px-6 py-3 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                        class="px-6 py-3 bg-gray-800 text-white font-medium rounded-lg hover:bg-gray-700 transition-colors duration-300 dark:bg-gray-700 dark:hover:bg-gray-600">
                         Build a Project with Us
                     </a>
                     <a href="/contact"
-                        class="px-6 py-3 bg-[#E6A619] text-black font-black rounded-lg hover:bg-[#d49916] transition-colors duration-300">
+                        class="px-6 py-3 bg-[#E6A619] text-black font-black rounded-lg hover:bg-[#d49916] transition-colors duration-300 dark:hover:bg-[#c58e14]">
                         Contact Us
                     </a>
                 </div>
@@ -425,7 +425,7 @@ definePageMeta({
 
 useSeoMeta({
     title: 'Our Work | Premium Projects Infrastructure Limited',
-    ogTitle: 'Our Work | Premium Projects Infrastructure Limited',
+    ogTitle: 'Our Work | Premium Projects Infrastructure Ltd',
     description: 'Explore our portfolio of impactful projects and meet our expert management team',
     ogDescription: 'Explore our portfolio of impactful projects and meet our expert management team',
 });

@@ -47,7 +47,10 @@ onUnmounted(() => {
         <!-- Logo section without background -->
         <div class="flex-shrink-0">
           <a href="/" class="inline-block">
-            <img src="~/assets/img/PPIL Logo.svg" alt="PPIL Logo" class="h-12 md:h-14"/>
+            <img src="~/assets/img/PPIL Logo.svg" alt="PPIL Logo" class="h-12 md:h-14" :class="{
+              'invert': isDark || (!isDark && !scrolled),
+              '': !isDark && scrolled
+            }" />
           </a>
         </div>
 
