@@ -45,9 +45,9 @@ onUnmounted(() => {
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <header class="flex items-center justify-between py-2">
         <!-- Logo section without background -->
-        <div class="bg-white/70 px-3 py-2 rounded-md inline-block">
+        <div class="bg-black/60 px-3 py-2 rounded-md inline-block">
           <a href="/" class="inline-block">
-            <img src="~/assets/img/PPIL Logo.svg" alt="PPIL Logo" class="h-12 md:h-14 drop-shadow-lg" />
+            <img src="~/assets/img/PPIL Logo.svg" alt="PPIL Logo" class="h-12 md:h-14" />
           </a>
         </div>
 

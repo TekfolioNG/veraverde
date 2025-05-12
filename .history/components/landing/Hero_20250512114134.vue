@@ -7,8 +7,7 @@
           class="absolute inset-0 w-screen h-full">
           <img :src="slide.image" :alt="slide.alt" class="w-full h-full object-cover object-center" />
           <!-- Gradient overlay -->
-          <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
-
+          <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
         </div>
       </transition-group>
     </div>
