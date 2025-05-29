@@ -4,21 +4,20 @@
       <!-- Main Footer -->
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
         <!-- Column 1: Logo and About (adjusted width) -->
-        <div class="md:col-span-4 flex flex-col items-center md:items-start">
-          <div class="mb-6 bg-white p-2 rounded-md inline-block">
-            <a href="/">
-              <img src="~/assets/img/PPIL Logo.svg" alt="PPIL Logo" class="h-16 md:h-20 drop-shadow-lg" />
-            </a>
-          </div>
+        <div class="md:col-span-4 flex flex-col items-center md:items-start -mt-4">
+          <NuxtLink to="/">
+            <img src="~/assets/img/Xstrato-logo.png" alt="Xstrato Logo" class="h-32 md:h-36 drop-shadow-lg" />
+          </NuxtLink>
 
           <p class="text-gray-300 leading-relaxed mb-6 text-center md:text-left">
-            PPIL is one of Nigeria's most trusted hybrid construction and infrastructure firms —
-            bringing together engineering, project management, and facility services under one roof.
-            Since 2014, we've helped shape cities and communities through high-impact projects that
-            deliver true value.
+            Xstrato is a leading construction and engineering firm dedicated to delivering
+            exceptional results across Nigeria and beyond. From innovative solar solutions
+            to comprehensive infrastructure projects, we combine technical expertise with
+            unwavering commitment to excellence. Since our founding, we've built lasting
+            partnerships through quality work and reliable service.
           </p>
-          <NuxtLink to="/who-we-are"
-            class="text-yellow-400 hover:text-yellow-300 transition-colors text-sm inline-flex items-center">
+          <NuxtLink to="/about-us"
+            class="text-blue-400 hover:text-blue-300 transition-colors text-sm inline-flex items-center">
             Learn more about us
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -29,23 +28,29 @@
 
         <!-- Column 2: Quick Links -->
         <div class="md:col-span-2 flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold mb-6 text-yellow-400">
+          <h3
+            class="text-lg font-semibold mb-6 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
             Quick Links
           </h3>
           <ul class="space-y-4 text-center md:text-left">
             <li>
-              <NuxtLink to="/who-we-are" class="text-gray-300 hover:text-white transition-colors">
-                Who We Are
+              <NuxtLink to="/" class="text-gray-300 hover:text-white transition-colors">
+                Home
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/what-we-do" class="text-gray-300 hover:text-white transition-colors">
-                What We Do
+              <NuxtLink to="/about-us" class="text-gray-300 hover:text-white transition-colors">
+                About Us
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/our-work" class="text-gray-300 hover:text-white transition-colors">
-                Our Work
+              <NuxtLink to="/services" class="text-gray-300 hover:text-white transition-colors">
+                Services
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/our-projects" class="text-gray-300 hover:text-white transition-colors">
+                Our Projects
               </NuxtLink>
             </li>
             <li>
@@ -54,59 +59,50 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/contact" class="text-gray-300 hover:text-white transition-colors">
+              <NuxtLink to="/contact-us" class="text-gray-300 hover:text-white transition-colors">
                 Contact Us
               </NuxtLink>
             </li>
           </ul>
         </div>
 
-        <!-- Column 3: Services -->
+        <!-- Column 3: Our Expertise -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold mb-6 text-yellow-400">
-            Services
+          <h3
+            class="text-lg font-semibold mb-6 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            Our Expertise
           </h3>
           <ul class="space-y-3 text-center md:text-left">
             <li>
-              <NuxtLink to="/what-we-do#design-planning" class="text-gray-300 hover:text-white transition-colors">
-                Design & Planning
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/what-we-do#construction-project" class="text-gray-300 hover:text-white transition-colors">
-                Construction & Project Planning
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/what-we-do#renovation-upgrades" class="text-gray-300 hover:text-white transition-colors">
-                Renovation & Upgrades
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/what-we-do#facility-audit" class="text-gray-300 hover:text-white transition-colors">
-                Facility Audit/
-                Condition Survey
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/what-we-do#facility-management" class="text-gray-300 hover:text-white transition-colors">
-                Facility Management
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/what-we-do#engineering-procurement"
+              <NuxtLink to="/services#construction-contracting"
                 class="text-gray-300 hover:text-white transition-colors">
-                Engineering/Procurement Consultancy
+                Construction & General Contracting
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/what-we-do#import-export" class="text-gray-300 hover:text-white transition-colors">
-                Import & Export
+              <NuxtLink to="/services#solar-energy" class="text-gray-300 hover:text-white transition-colors">
+                Solar Energy Solutions
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/what-we-do#general-contractor" class="text-gray-300 hover:text-white transition-colors">
-                General Contractor
+              <NuxtLink to="/services#engineering-design" class="text-gray-300 hover:text-white transition-colors">
+                Engineering & Design Services
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services#renovation-infrastructure"
+                class="text-gray-300 hover:text-white transition-colors">
+                Renovation & Infrastructure Upgrades
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services#project-management" class="text-gray-300 hover:text-white transition-colors">
+                Project Management & Advisory
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services#technical-training" class="text-gray-300 hover:text-white transition-colors">
+                Technical Training & Workforce Development
               </NuxtLink>
             </li>
           </ul>
@@ -114,13 +110,14 @@
 
         <!-- Column 4: Contact Info -->
         <div class="md:col-span-3 flex flex-col items-center md:items-start">
-          <h3 class="text-lg font-semibold mb-6 text-yellow-400">
+          <h3
+            class="text-lg font-semibold mb-6 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
             Contact Us
           </h3>
           <ul class="space-y-4 text-center md:text-left">
             <li class="flex flex-col md:flex-row items-center md:items-start">
               <div class="flex items-start mb-2 md:mb-0 md:mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 flex-shrink-0 mt-1" fill="none"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 flex-shrink-0 mt-1" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -130,12 +127,12 @@
               </div>
               <div class="text-gray-300 text-sm">
                 <strong class="block text-white mb-1">Head Office:</strong>
-                03, Borno Road, off Independence Way, Marafa, Kaduna.
+                1 Idris Garba street Kado Kuchi FCT- Abuja.
               </div>
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">
               <div class="flex items-start mb-2 md:mb-0 md:mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 flex-shrink-0 mt-1" fill="none"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 flex-shrink-0 mt-1" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -145,12 +142,12 @@
               </div>
               <div class="text-gray-300 text-sm">
                 <strong class="block text-white mb-1">Abuja Office:</strong>
-                02, Bilyamin Usman Street, Off Ebitu Ukiwe Street, Jabi Abuja.
+                3 Borno Road KRC, Off Independence Way, Kaduna.
               </div>
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">
               <div class="flex items-center mb-2 md:mb-0 md:mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 flex-shrink-0" fill="none"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 flex-shrink-0" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -158,12 +155,12 @@
               </div>
               <div class="text-gray-300 text-sm">
                 <strong class="block text-white mb-1">Tel:</strong>
-                +234 (0) 9-292-0035, +234 803 786 7646
+                +234 (0) 705 290 5863, +234 814 691 6040
               </div>
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">
               <div class="flex items-center mb-2 md:mb-0 md:mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 flex-shrink-0" fill="none"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400 flex-shrink-0" fill="none"
                   viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -171,7 +168,9 @@
               </div>
               <div class="text-gray-300 text-sm">
                 <strong class="block text-white mb-1">E-mail:</strong>
-                <a href="mailto:info@ppil.com.ng" class="hover:text-yellow-400 transition-colors">info@ppil.com.ng</a>
+                <a href="mailto:info@xstratoprime.com"
+                  class="hover:text-blue-400 transition-colors">info@xstratoprime.com,
+                  xstratoprime@gmail.com</a>
               </div>
             </li>
           </ul>
@@ -182,7 +181,7 @@
       <div class="border-t border-gray-700 pt-6">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
           <div class="order-2 md:order-1 text-gray-400 text-sm text-center">
-            © {{ new Date().getFullYear() }} Premium Projects Infrastructure Limited (PPIL) Ltd, All Rights Reserved.
+            © {{ new Date().getFullYear() }} XstratoPrime Nigeria Ltd, All Rights Reserved.
           </div>
 
           <div class="order-1 md:order-2 flex flex-col md:flex-row items-center gap-4">
@@ -205,14 +204,10 @@
 
           <div class="order-3 text-gray-400 text-sm text-center md:text-right">
             Website Development by <NuxtLink to="https://tekfol.io" target="_blank"
-              class="text-gray-300 hover:text-yellow-400 transition-colors">Tekfolio Ltd</NuxtLink>
+              class="text-gray-300 hover:text-blue-400 transition-colors">Tekfolio Ltd</NuxtLink>
           </div>
         </div>
       </div>
     </div>
   </footer>
 </template>
-
-<script setup>
-// No script logic needed for this component
-</script>

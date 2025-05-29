@@ -14,8 +14,8 @@ const isDark = computed({
 
 const menuitems = [
   { title: "HOME", path: "/", hasDropdown: false },
-  { title: "WHO WE ARE", path: "/who-we-are", hasDropdown: false },
-  { title: "WHAT WE DO", path: "/what-we-do", hasDropdown: false },
+  { title: "ABOUT US", path: "/who-we-are", hasDropdown: false },
+  { title: "SERVICES", path: "/what-we-do", hasDropdown: false },
   { title: "OUR WORK", path: "/our-work", hasDropdown: false },
   { title: "OUR TEAM", path: "/our-team", hasDropdown: false },
   { title: "CONTACT US", path: "/contact", hasDropdown: false },
@@ -43,16 +43,16 @@ onUnmounted(() => {
   <div class="fixed w-full z-50 top-0 left-0 right-0 transition-all duration-300"
     :class="{ 'bg-white shadow-md': scrolled && !isDark, 'bg-gray-900 shadow-md': scrolled && isDark }">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="flex items-center justify-between py-2">
-        <!-- Logo section without background -->
-        <div class="bg-white/70 px-3 py-2 rounded-md inline-block">
-          <a href="/" class="inline-block">
-            <img src="~/assets/img/PPIL Logo.svg" alt="PPIL Logo" class="h-12 md:h-14 drop-shadow-lg" />
-          </a>
-        </div>
+      <header class="flex items-center justify-between py-1">
+        <!-- Logo section with increased size -->
+
+        <NuxtLink to="/" class="inline-block">
+          <img src="~/assets/img/Xstrato-logo.png" alt="XSTRATO Logo" class="h-32 md:h-36 drop-shadow-lg" />
+        </NuxtLink>
+
 
         <!-- Desktop Navigation - center fixed with reduced height -->
-        <nav class="hidden md:block fixed-nav mt-0">
+        <nav class="hidden md:block fixed-nav">
           <ul class="flex space-x-6 lg:space-x-8">
             <li v-for="item in menuitems" :key="item.title">
               <NuxtLink :to="item.path"
@@ -60,7 +60,7 @@ onUnmounted(() => {
                 :class="{
                   'text-black': (!isDark && scrolled),
                   'text-white': (!isDark && !scrolled) || (isDark && !scrolled) || (isDark && scrolled),
-                  'hover:text-primary': true
+                  'hover:text-[#E6A619]': true
                 }">
                 {{ item.title }}
                 <span v-if="item.hasDropdown" class="ml-1">
@@ -158,8 +158,8 @@ onUnmounted(() => {
   left: 50%;
   transform: translateX(-50%);
   z-index: 51;
-  margin-top: -0.5rem;
-  /* Move items up slightly */
+  margin-top: -1rem;
+  /* Move items up more to reduce navbar height */
 }
 
 /* Active link */
