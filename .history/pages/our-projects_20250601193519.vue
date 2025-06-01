@@ -208,15 +208,15 @@ definePageMeta({
 
 useHead({
   meta: [
-    { property: 'og:title', content: 'Xstrato Prime Nigeria Limited | Engineering Excellence & Infrastructure Development' },
-    { property: 'og:description', content: 'Leading engineering and construction company delivering innovative infrastructure solutions across Nigeria. Specializing in civil works, telecommunications, renewable energy, and project management.' },
+    { property: 'og:title', content: 'Our Work | Premium Projects Infrastructure Limited' },
+    { property: 'og:description', content: 'Excellence & Innovation in Infrastructure.' },
     { property: 'og:image', content: 'https://xstrato.com/xstrato-og-image.jpg' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
-    { property: 'og:image:alt', content: 'Xstrato Prime Nigeria Limited - Engineering Excellence' },
+    { property: 'og:image:alt', content: 'Our Work | Premium Projects Infrastructure Limited' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Xstrato Prime Nigeria Limited | Engineering Excellence' },
-    { name: 'twitter:description', content: 'Leading engineering and construction company delivering innovative infrastructure solutions across Nigeria.' },
+    { name: 'twitter:title', content: 'Our Work | Premium Projects Infrastructure Limited' },
+    { name: 'twitter:description', content: 'Our Work | Premium Projects Infrastructure Limited' },
     { name: 'twitter:image', content: 'https://xstrato.com/xstrato-og-image.jpg' }
   ]
 });
