@@ -16,7 +16,7 @@ const menuitems = [
   { title: "HOME", path: "/", hasDropdown: false },
   { title: "ABOUT US", path: "/about-us", hasDropdown: false },
   { title: "SERVICES", path: "/services", hasDropdown: false },
-  { title: "OUR PROJECTS", path: "/our-projects", hasDropdown: false },
+  { title: "OUR WORK", path: "/our-work", hasDropdown: false },
   { title: "OUR TEAM", path: "/our-team", hasDropdown: false },
   { title: "CONTACT US", path: "/contact", hasDropdown: false },
 ];

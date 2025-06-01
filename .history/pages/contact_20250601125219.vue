@@ -90,7 +90,7 @@ useSeoMeta({
 <template>
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <!-- Hero Section with Contact Info Overlay -->
-    <section class="relative w-full min-h-screen overflow-hidden pt-20 md:pt-24">
+    <section class="relative w-full h-screen overflow-hidden">
       <!-- Background Gradient -->
       <div class="absolute inset-0 bg-gradient-to-br from-[#001122] via-[#002244] to-[#003366]"></div>
 
@@ -105,94 +105,91 @@ useSeoMeta({
       </div>
 
       <!-- Content Container -->
-      <div class="relative z-10 container mx-auto px-6 py-12 md:py-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div class="relative z-10 container mx-auto px-6 h-full flex items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full items-center">
 
           <!-- Left Side - Animation & Title -->
-          <div class="text-center lg:text-left order-2 lg:order-1">
-            <div class="mb-6 md:mb-8">
-              <DotLottieVue style="height: 280px; width: 280px" class="mx-auto lg:mx-0 md:!h-[320px] md:!w-[320px]"
-                autoplay loop src="https://lottie.host/d53719be-b868-4298-80c2-c7397958273a/veH5wxdKqv.lottie" />
+          <div class="text-center lg:text-left">
+            <div class="mb-8">
+              <DotLottieVue style="height: 350px; width: 350px" autoplay loop
+                src="https://lottie.host/d53719be-b868-4298-80c2-c7397958273a/veH5wxdKqv.lottie"
+                class="mx-auto lg:mx-0" />
             </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6"
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6"
               style="font-family: 'Barlow Condensed', sans-serif;">
               LET'S CONNECT
             </h1>
-            <p class="text-lg md:text-xl text-gray-300 max-w-lg mx-auto lg:mx-0">
+            <p class="text-xl text-gray-300 max-w-lg mx-auto lg:mx-0">
               Ready to start your next project? We're here to help bring your vision to life.
             </p>
           </div>
 
           <!-- Right Side - Contact Cards -->
-          <div class="space-y-4 md:space-y-6 order-1 lg:order-2">
+          <div class="space-y-6">
             <!-- Head Office Card -->
             <div
-              class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 md:p-6 hover:bg-white/15 transition-all duration-300">
-              <div class="flex items-start space-x-3 md:space-x-4">
-                <div
-                  class="w-10 h-10 md:w-12 md:h-12 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 md:w-6 md:h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
+              class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                       d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
                       clip-rule="evenodd"></path>
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">Head Office</h3>
-                  <p class="text-sm md:text-base text-gray-300">1 Idris Garba street Kado Kuchi FCT- Abuja.</p>
+                  <h3 class="text-xl font-bold text-white mb-2">Head Office</h3>
+                  <p class="text-gray-300">1 Idris Garba street Kado Kuchi FCT- Abuja.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Kaduna Office Card -->
+            <!-- Abuja Office Card -->
             <div
-              class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 md:p-6 hover:bg-white/15 transition-all duration-300">
-              <div class="flex items-start space-x-3 md:space-x-4">
-                <div
-                  class="w-10 h-10 md:w-12 md:h-12 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 md:w-6 md:h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
+              class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                       d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z"
                       clip-rule="evenodd"></path>
                   </svg>
                 </div>
                 <div>
-                  <h3 class="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">Kaduna Office</h3>
-                  <p class="text-sm md:text-base text-gray-300">3 Borno Road KRC, Off Independence Way, Kaduna.</p>
+                  <h3 class="text-xl font-bold text-white mb-2">Kaduna Office</h3>
+                  <p class="text-gray-300">3 Borno Road KRC, Off Independence Way, Kaduna.</p>
                 </div>
               </div>
             </div>
 
             <!-- Contact Details Card -->
             <div
-              class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 md:p-6 hover:bg-white/15 transition-all duration-300">
-              <div class="space-y-3 md:space-y-4">
-                <div class="flex items-center space-x-3 md:space-x-4">
-                  <div
-                    class="w-8 h-8 md:w-10 md:h-10 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 md:w-5 md:h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+              class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
+              <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                  <div class="w-10 h-10 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
                       <path
                         d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                       </path>
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm md:text-base text-white font-medium">+234 (0) 705 290 5863</p>
-                    <p class="text-sm md:text-base text-gray-300">+234 814 691 6040</p>
+                    <p class="text-white font-medium">+234 (0) 705 290 5863</p>
+                    <p class="text-gray-300">+234 814 691 6040</p>
                   </div>
                 </div>
 
-                <div class="flex items-center space-x-3 md:space-x-4">
-                  <div
-                    class="w-8 h-8 md:w-10 md:h-10 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 md:w-5 md:h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+                <div class="flex items-center space-x-4">
+                  <div class="w-10 h-10 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm md:text-base text-white font-medium">info@xstratoprime.com</p>
-                    <p class="text-sm md:text-base text-gray-300">xstratoprime@gmail.com</p>
+                    <p class="text-white font-medium">info@xstratoprime.com</p>
+                    <p class="text-gray-300">xstratoprime@gmail.com</p>
                   </div>
                 </div>
               </div>

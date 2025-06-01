@@ -31,7 +31,7 @@
                         <div class="text-white mb-6">
                             <h4
                                 class="text-white text-lg uppercase tracking-wide font-medium mb-3 relative inline-block">
-                                <span class="border-b-2 border-[#E6A619] pb-1">XSATRO MANAGEMENT</span>
+                                <span class="border-b-2 border-[#E6A619] pb-1">PPIL PROJECTS</span>
                             </h4>
                         </div>
 
@@ -309,42 +309,28 @@
             </div>
         </section>
 
-       <!-- CTA Section -->
-       <section class="pt-16 pb-8 mb-12 mx-4 bg-gradient-to-r from-[#335FA8] to-slate-800 -p-2 md:p-0">
-
-
-<div class="container mx-auto px-6 md:px-8 max-w-5xl">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Content moved to left -->
-        <div class="text-left">
-            <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">
-                Ready to Partner with Xstrato Prime?
-            </h3>
-            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
-                Experience the difference of working with a hybrid company that combines innovative
-                solutions,
-                professional expertise, and unwavering commitment to customer satisfaction.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="/services"
-                    class="px-8 py-4 bg-white text-[#335FA8] font-bold rounded-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg text-center">
-                    Explore Our Services
-                </a>
-                <a href="/contact"
-                    class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-[#335FA8] transition-colors duration-300 text-center">
-                    Get In Touch
-                </a>
+        <!-- Call to Action Section -->
+        <section class="py-16 bg-gray-900 text-white">
+            <div class="container mx-auto px-6 md:px-8 text-center">
+                <h3 class="text-3xl md:text-4xl font-bold mb-6" style="font-family: 'Barlow Condensed', sans-serif;">
+                    Ready to Work with Our Expert Team?
+                </h3>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+                    Our multidisciplinary professionals are ready to bring your infrastructure vision to life.
+                    Contact us to discuss your next project.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact"
+                        class="bg-[#E6A619] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#d4941a] transition-colors">
+                        Get in Touch
+                    </a>
+                    <a href="/projects"
+                        class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors">
+                        View Our Projects
+                    </a>
+                </div>
             </div>
-        </div>
-
-        <!-- Image on the right -->
-        <div class="lg:flex justify-end hidden">
-            <img src="~/assets/img/about-xstrato4.png" alt="Xstrato Prime Team"
-                class="max-w-md w-full h-auto rounded-lg shadow-lg" />
-        </div>
-    </div>
-</div>
-</section>
+        </section>
     </div>
 </template>
 

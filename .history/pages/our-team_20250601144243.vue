@@ -31,7 +31,7 @@
                         <div class="text-white mb-6">
                             <h4
                                 class="text-white text-lg uppercase tracking-wide font-medium mb-3 relative inline-block">
-                                <span class="border-b-2 border-[#E6A619] pb-1">XSATRO MANAGEMENT</span>
+                                <span class="border-b-2 border-[#E6A619] pb-1">PPIL PROJECTS</span>
                             </h4>
                         </div>
 
