@@ -59,7 +59,7 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/contact" class="text-gray-300 hover:text-white transition-colors">
+              <NuxtLink to="/contact-us" class="text-gray-300 hover:text-white transition-colors">
                 Contact Us
               </NuxtLink>
             </li>
@@ -74,30 +74,35 @@
           </h3>
           <ul class="space-y-3 text-center md:text-left">
             <li>
-              <NuxtLink to="/services#procurement-supply-chain"
-                class="text-gray-300 hover:text-white transition-colors">
-                Procurement & Supply Chain
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/services#construction-and-contracting"
+              <NuxtLink to="/services#construction-contracting"
                 class="text-gray-300 hover:text-white transition-colors">
                 Construction & General Contracting
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services#project-management" class="text-gray-300 hover:text-white transition-colors">
-                Project Management & Engineering Services
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/services#solar-solutions" class="text-gray-300 hover:text-white transition-colors">
+              <NuxtLink to="/services#solar-energy" class="text-gray-300 hover:text-white transition-colors">
                 Solar Energy Solutions
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services#training-development" class="text-gray-300 hover:text-white transition-colors">
-                Training & Development
+              <NuxtLink to="/services#engineering-design" class="text-gray-300 hover:text-white transition-colors">
+                Engineering & Design Services
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services#renovation-infrastructure"
+                class="text-gray-300 hover:text-white transition-colors">
+                Renovation & Infrastructure Upgrades
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services#project-management" class="text-gray-300 hover:text-white transition-colors">
+                Project Management & Advisory
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services#technical-training" class="text-gray-300 hover:text-white transition-colors">
+                Technical Training & Workforce Development
               </NuxtLink>
             </li>
           </ul>
@@ -137,7 +142,7 @@
               </div>
               <div class="text-gray-300 text-sm">
                 <strong class="block text-white mb-1">Abuja Office:</strong>
-                1 Idris Garba Street, Kado FCT Abuja, Nigeria
+                3 Borno Road KRC, Off Independence Way, Kaduna.
               </div>
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">
@@ -150,9 +155,7 @@
               </div>
               <div class="text-gray-300 text-sm">
                 <strong class="block text-white mb-1">Tel:</strong>
-                +234 905 544 0633,
-                <br>+234 705 290 5863
-                </br>
+                +234 (0) 705 290 5863, +234 814 691 6040
               </div>
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">

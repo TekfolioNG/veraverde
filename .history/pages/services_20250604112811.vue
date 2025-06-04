@@ -188,7 +188,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=construction-and-contracting class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Construction & General Contracting
                     </h3>
@@ -235,7 +235,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=project-management class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Project Management and Engineering Services
                     </h3>
@@ -290,7 +290,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=#solar-solutions class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Solar Energy Solutions
                     </h3>
@@ -337,7 +337,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=#training-development class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Training and Development
                     </h3>

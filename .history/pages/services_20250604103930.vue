@@ -120,7 +120,7 @@
         </div>
 
         <div class="space-y-12">
-          <!-- Procurement and Supply Chain -->
+          <!-- 1. Procurement and Supply Chain -->
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div class="grid lg:grid-cols-3 gap-0">
               <div class="lg:col-span-2 p-8 md:p-12">
@@ -132,47 +132,46 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id="procurement-supply-chain" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
-                      Procurement and Supply Chain
+                      Procurement & Supply Chain
                     </h3>
-                    <p class="text-[#E6A619] font-medium uppercase text-sm tracking-wide">Efficient Sourcing Solutions
-                    </p>
+                    <p class="text-[#E6A619] font-medium uppercase text-sm tracking-wide">Strategic Sourcing</p>
                   </div>
                 </div>
 
                 <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                  We streamline your procurement processes with strategic sourcing, vendor management, and supply chain
-                  optimization to ensure quality materials at competitive prices.
+                  We streamline your procurement processes with strategic sourcing, vendor management, and efficient
+                  supply chain solutions that reduce costs and ensure quality delivery.
                 </p>
 
                 <div class="grid sm:grid-cols-2 gap-4 mb-6">
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Strategic sourcing</span>
+                    <span class="text-gray-700">Strategic vendor selection</span>
                   </div>
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Vendor management</span>
+                    <span class="text-gray-700">Supply chain optimization</span>
                   </div>
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Cost optimization</span>
+                    <span class="text-gray-700">Quality assurance programs</span>
                   </div>
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Quality assurance</span>
+                    <span class="text-gray-700">Cost management solutions</span>
                   </div>
                 </div>
               </div>
               <div class="lg:col-span-1">
-                <img src="~/assets/img/xsatro-equipment.jpg" alt="Procurement and Supply Chain"
+                <img src="~/assets/img/services-procurement.jpg" alt="Procurement & Supply Chain"
                   class="w-full h-64 lg:h-full object-cover" loading="lazy" />
               </div>
             </div>
           </div>
 
-          <!-- Construction & General Contracting -->
+          <!-- 2. Construction & General Contracting -->
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div class="grid lg:grid-cols-3 gap-0">
               <div class="lg:col-span-1 order-2 lg:order-1">
@@ -188,7 +187,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=construction-and-contracting class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Construction & General Contracting
                     </h3>
@@ -223,7 +222,7 @@
             </div>
           </div>
 
-          <!-- Project Management and Engineering Services -->
+          <!-- 3. Project Management & Engineering Services -->
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div class="grid lg:grid-cols-3 gap-0">
               <div class="lg:col-span-2 p-8 md:p-12">
@@ -235,46 +234,47 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=project-management class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
-                      Project Management and Engineering Services
+                      Project Management & Engineering Services
                     </h3>
-                    <p class="text-[#E6A619] font-medium uppercase text-sm tracking-wide">Strategic Innovation</p>
+                    <p class="text-[#E6A619] font-medium uppercase text-sm tracking-wide">Strategic Oversight &
+                      Innovation</p>
                   </div>
                 </div>
 
                 <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                  We combine expert project management with innovative engineering design to deliver solutions that
-                  balance form, function, and budget while ensuring strategic oversight.
+                  We combine expert project management with innovative engineering solutions to deliver projects on
+                  time, within budget, and to the highest technical standards.
                 </p>
 
                 <div class="grid sm:grid-cols-2 gap-4 mb-6">
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Strategic planning</span>
+                    <span class="text-gray-700">Strategic planning & execution</span>
                   </div>
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Engineering analysis</span>
+                    <span class="text-gray-700">Engineering analysis & design</span>
                   </div>
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Budget management</span>
+                    <span class="text-gray-700">Budget & risk management</span>
                   </div>
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Quality assurance</span>
+                    <span class="text-gray-700">Quality assurance & compliance</span>
                   </div>
                 </div>
               </div>
               <div class="lg:col-span-1">
-                <img src="~/assets/img/services-xsatro2.jpg" alt="Project Management and Engineering Services"
+                <img src="~/assets/img/services-xsatro5.jpg" alt="Project Management & Engineering Services"
                   class="w-full h-64 lg:h-full object-cover" loading="lazy" />
               </div>
             </div>
           </div>
 
-          <!-- Solar Energy Solutions -->
+          <!-- 4. Solar Energy Solutions -->
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div class="grid lg:grid-cols-3 gap-0">
               <div class="lg:col-span-1 order-2 lg:order-1">
@@ -290,7 +290,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=#solar-solutions class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Solar Energy Solutions
                     </h3>
@@ -325,7 +325,7 @@
             </div>
           </div>
 
-          <!-- Training and Development -->
+          <!-- 5. Training and Development -->
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div class="grid lg:grid-cols-3 gap-0">
               <div class="lg:col-span-2 p-8 md:p-12">
@@ -337,9 +337,9 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=#training-development class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
-                      Training and Development
+                      Training & Development
                     </h3>
                     <p class="text-[#E6A619] font-medium uppercase text-sm tracking-wide">XstratoPrime Academy</p>
                   </div>
@@ -370,7 +370,7 @@
                 </div>
               </div>
               <div class="lg:col-span-1">
-                <img src="~/assets/img/services-xsatro10.jpg" alt="Training and Development"
+                <img src="~/assets/img/services-xsatro10.jpg" alt="Training & Development"
                   class="w-full h-64 lg:h-full object-cover" loading="lazy" />
               </div>
             </div>

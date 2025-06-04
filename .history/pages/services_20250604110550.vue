@@ -132,7 +132,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id="procurement-supply-chain" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Procurement and Supply Chain
                     </h3>
@@ -188,7 +188,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=construction-and-contracting class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Construction & General Contracting
                     </h3>
@@ -235,7 +235,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=project-management class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Project Management and Engineering Services
                     </h3>
@@ -278,7 +278,7 @@
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div class="grid lg:grid-cols-3 gap-0">
               <div class="lg:col-span-1 order-2 lg:order-1">
-                <img src="~/assets/img/services-xsatro6.jpg" alt="Solar Energy Solutions"
+                <img src="~/assets/img/services-xsatro7.jpg" alt="Solar Energy Solutions"
                   class="w-full h-64 lg:h-full object-cover" loading="lazy" />
               </div>
               <div class="lg:col-span-2 p-8 md:p-12 order-1 lg:order-2">
@@ -290,7 +290,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=#solar-solutions class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Solar Energy Solutions
                     </h3>
@@ -337,7 +337,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id=#training-development class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Training and Development
                     </h3>

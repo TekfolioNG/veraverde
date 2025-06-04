@@ -36,8 +36,8 @@
                                 quality materials and services are delivered on time and within budget.
                             </p>
                             <div class="mt-auto">
-                                <NuxtLink to="/services#procurement-supply-chain" class="inline-flex items-center bg-[#002244] text-white px-6 py-3 rounded-lg
-                                    font-semibold hover:bg-[#B51C1C] transition-all duration-300 group">
+                                <NuxtLink to="/services/procurement"
+                                    class="inline-flex items-center bg-[#002244] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#B51C1C] transition-all duration-300 group">
                                     <span>LEARN MORE</span>
                                     <UIcon name="i-heroicons-arrow-right"
                                         class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
@@ -63,7 +63,7 @@
                                 build is solid, safe, and delivered as promised.
                             </p>
                             <div class="mt-auto">
-                                <NuxtLink to="/services#construction-and-contracting"
+                                <NuxtLink to="/services/construction"
                                     class="inline-flex items-center text-blue-700 font-semibold hover:text-blue-800 transition-colors group">
                                     <span class="text-sm">LEARN MORE</span>
                                     <span
@@ -94,7 +94,7 @@
                                 comprehensive solutions that keep your projects on track and within scope.
                             </p>
                             <div class="mt-auto">
-                                <NuxtLink to="/services#project-management"
+                                <NuxtLink to="/services/project-management"
                                     class="inline-flex items-center text-[#002244] font-semibold hover:text-[#B51C1C] transition-colors group">
                                     <span class="text-sm">LEARN MORE</span>
                                     <span
@@ -123,7 +123,7 @@
                                 independence, and support a cleaner environment.
                             </p>
                             <div class="mt-auto">
-                                <NuxtLink to="/services#solar-solutions"
+                                <NuxtLink to="/services/solar"
                                     class="inline-flex items-center text-green-700 font-semibold hover:text-green-800 transition-colors group">
                                     <span class="text-sm">LEARN MORE</span>
                                     <span
@@ -157,7 +157,7 @@
                                 Through our XstratoPrime Academy, we train artisans and technicians with real-world
                                 skills needed in today's evolving job market.
                             </p>
-                            <NuxtLink to="/services#training-development"
+                            <NuxtLink to="/services/training"
                                 class="inline-flex items-center bg-white text-[#335FA8] px-8 py-4 rounded-lg font-bold hover:bg-[#e6a519] transition-all duration-300 group shadow-lg">
                                 <span>LEARN MORE</span>
                                 <UIcon name="i-heroicons-arrow-right"

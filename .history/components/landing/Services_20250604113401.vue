@@ -157,7 +157,7 @@
                                 Through our XstratoPrime Academy, we train artisans and technicians with real-world
                                 skills needed in today's evolving job market.
                             </p>
-                            <NuxtLink to="/services#training-development"
+                            <NuxtLink to="/services/training"
                                 class="inline-flex items-center bg-white text-[#335FA8] px-8 py-4 rounded-lg font-bold hover:bg-[#e6a519] transition-all duration-300 group shadow-lg">
                                 <span>LEARN MORE</span>
                                 <UIcon name="i-heroicons-arrow-right"

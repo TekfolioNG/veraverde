@@ -67,7 +67,7 @@ const slides = [
   {
     image: constructionSite,
     alt: 'Construction Site - XSTRATO',
-    title: 'Procurement & Supply Chain',
+    title: 'Construction & General Contracting',
     description: 'From residential buildings to large-scale infrastructure, we manage every project with precision, speed, and integrity.',
     buttonLink: '/services',
     buttonText: 'Learn More'
@@ -83,7 +83,7 @@ const slides = [
   {
     image: roadConstruction,
     alt: 'Road Construction - XSTRATO',
-    title: 'Construction & General Cotracting',
+    title: 'Training & Development',
     description: 'Our training programs develop skilled professionals ready to meet the demands of today\'s construction and tech industries.',
     buttonLink: '/services',
     buttonText: 'Learn More'

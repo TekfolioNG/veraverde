@@ -172,8 +172,8 @@ useHead({
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm md:text-base text-white font-medium">+234 (0) 905 544 0633</p>
-                    <p class="text-sm md:text-base text-gray-300">+234 705 290 5863</p>
+                    <p class="text-sm md:text-base text-white font-medium">+234 (0) 705 290 5863</p>
+                    <p class="text-sm md:text-base text-gray-300">+234 814 691 6040</p>
                   </div>
                 </div>
 
@@ -323,12 +323,12 @@ useHead({
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div class="space-y-6">
             <div class="bg-gradient-to-br from-[#002244] to-[#003366] rounded-3xl p-8 text-white">
-              <h3 class="text-2xl font-bold mb-4" style="font-family: 'Barlow Condensed', sans-serif;">HEAD OFFICE
+              <h3 class="text-2xl font-bold mb-4" style="font-family: 'Barlow Condensed', sans-serif;">ABUJA HEAD OFFICE
               </h3>
-              <p class="text-gray-300 mb-6">19a Agudama off, Wogu Street, D-Line, Port Harcourt, Nigeria</p>
+              <p class="text-gray-300 mb-6">1 Idris Garba street Kado Kuchi FCT- Abuja.</p>
               <div class="h-64 bg-gray-200/20 rounded-2xl overflow-hidden backdrop-blur-sm">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.2891234567!2d7.0334567!3d4.8156789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d2b1c8f9a5c7%3A0x12345678901234!2s19a%20Agudama%20off%20Wogu%20Street%2C%20D-Line%2C%20Port%20Harcourt%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1623345678901!5m2!1sen!2sng"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.847202180092!2d7.433682315797442!3d9.05747019354719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b1b9b9b9b9b%3A0x9b3b7b1b6b1b6b1b!2sKado%20Estate%2C%20Abuja!5e0!3m2!1sen!2sng!4v1623345678901!5m2!1sen!2sng"
                   width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                   class="rounded-2xl"></iframe>
               </div>
@@ -337,12 +337,12 @@ useHead({
 
           <div class="space-y-6">
             <div class="bg-gradient-to-br from-[#E6A619] to-[#d49916] rounded-3xl p-8 text-black">
-              <h3 class="text-2xl font-bold mb-4" style="font-family: 'Barlow Condensed', sans-serif;">ABUJA OFFICE
+              <h3 class="text-2xl font-bold mb-4" style="font-family: 'Barlow Condensed', sans-serif;">KADUNA OFFICE
               </h3>
-              <p class="text-gray-800 mb-6">1 Idris Garba Street, Kado FCT Abuja, Nigeria</p>
+              <p class="text-gray-800 mb-6">3 Borno Road KRC, Off Independence Way, Kaduna.</p>
               <div class="h-64 bg-black/10 rounded-2xl overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.847202180092!2d7.433682315797442!3d9.05747019354719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745c8b9f8d7b%3A0xa1b2c3d4e5f67890!2s1%20Idris%20Garba%20Street%2C%20Kado%20FCT%20Abuja%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1623345678901!5m2!1sen!2sng"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.963569876302!2d7.432798315793851!3d10.503758392500006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d3566f8a2b0b9%3A0x9b3b7b1b6b1b6b1b!2sBorno%20Road%2C%20Kaduna!5e0!3m2!1sen!2sng!4v1623345678901!5m2!1sen!2sng"
                   width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                   class="rounded-2xl"></iframe>
               </div>

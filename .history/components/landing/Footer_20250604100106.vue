@@ -59,7 +59,7 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/contact" class="text-gray-300 hover:text-white transition-colors">
+              <NuxtLink to="/contact-us" class="text-gray-300 hover:text-white transition-colors">
                 Contact Us
               </NuxtLink>
             </li>
@@ -74,30 +74,35 @@
           </h3>
           <ul class="space-y-3 text-center md:text-left">
             <li>
-              <NuxtLink to="/services#procurement-supply-chain"
-                class="text-gray-300 hover:text-white transition-colors">
-                Procurement & Supply Chain
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/services#construction-and-contracting"
+              <NuxtLink to="/services#construction-contracting"
                 class="text-gray-300 hover:text-white transition-colors">
                 Construction & General Contracting
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services#project-management" class="text-gray-300 hover:text-white transition-colors">
-                Project Management & Engineering Services
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/services#solar-solutions" class="text-gray-300 hover:text-white transition-colors">
+              <NuxtLink to="/services#solar-energy" class="text-gray-300 hover:text-white transition-colors">
                 Solar Energy Solutions
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services#training-development" class="text-gray-300 hover:text-white transition-colors">
-                Training & Development
+              <NuxtLink to="/services#engineering-design" class="text-gray-300 hover:text-white transition-colors">
+                Engineering & Design Services
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services#renovation-infrastructure"
+                class="text-gray-300 hover:text-white transition-colors">
+                Renovation & Infrastructure Upgrades
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services#project-management" class="text-gray-300 hover:text-white transition-colors">
+                Project Management & Advisory
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services#technical-training" class="text-gray-300 hover:text-white transition-colors">
+                Technical Training & Workforce Development
               </NuxtLink>
             </li>
           </ul>
@@ -148,12 +153,10 @@
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
               </div>
-              <div class="text-gray-300 text-sm">
+              < class="text-gray-300 text-sm">
                 <strong class="block text-white mb-1">Tel:</strong>
-                +234 905 544 0633,
-                <br>+234 705 290 5863
-                </br>
-              </div>
+                +234 (0) 905 544 0633,
+                <b>+234 705 290 5863</b < />
             </li>
             <li class="flex flex-col md:flex-row items-center md:items-start">
               <div class="flex items-center mb-2 md:mb-0 md:mr-3">
