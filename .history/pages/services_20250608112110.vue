@@ -188,7 +188,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id="construction-and-contracting" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 id=construction-and-contracting class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Construction & General Contracting
                     </h3>
@@ -223,65 +223,10 @@
             </div>
           </div>
 
-          <!-- Real Estate & Valuation -->
-          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <div class="grid lg:grid-cols-3 gap-0">
-              <div class="lg:col-span-2 p-8 md:p-12">
-                <div class="flex items-start gap-4 mb-6">
-                  <div class="w-12 h-12 bg-[#E6A619] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m0 0h4m0 0h3a1 1 0 001-1V10M9 21v-6a1 1 0 011-1h2a1 1 0 011 1v6" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 id="real-estate-valuation" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
-                      style="font-family: 'Barlow Condensed', sans-serif;">
-                      Real Estate & Valuation
-                    </h3>
-                    <p class="text-[#E6A619] font-medium uppercase text-sm tracking-wide">Property Excellence</p>
-                  </div>
-                </div>
-
-                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                  We provide comprehensive real estate services and accurate property valuations to help you make
-                  informed investment decisions and maximize property value.
-                </p>
-
-                <div class="grid sm:grid-cols-2 gap-4 mb-6">
-                  <div class="flex items-center gap-3">
-                    <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Property valuation</span>
-                  </div>
-                  <div class="flex items-center gap-3">
-                    <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Investment analysis</span>
-                  </div>
-                  <div class="flex items-center gap-3">
-                    <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Market research</span>
-                  </div>
-                  <div class="flex items-center gap-3">
-                    <div class="w-2 h-2 bg-[#E6A619] rounded-full"></div>
-                    <span class="text-gray-700">Property management</span>
-                  </div>
-                </div>
-              </div>
-              <div class="lg:col-span-1">
-                <img src="~/assets/img/xstrato-valuation3.jpg" alt="Real Estate & Valuation"
-                  class="w-full h-64 lg:h-full object-cover" loading="lazy" />
-              </div>
-            </div>
-          </div>
-
           <!-- Project Management and Engineering Services -->
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div class="grid lg:grid-cols-3 gap-0">
-              <div class="lg:col-span-1 order-2 lg:order-1">
-                <img src="~/assets/img/xstrato-valuation4.jpg" alt="Project Management and Engineering Services"
-                  class="w-full h-64 lg:h-full object-cover" loading="lazy" />
-              </div>
-              <div class="lg:col-span-2 p-8 md:p-12 order-1 lg:order-2">
+              <div class="lg:col-span-2 p-8 md:p-12">
                 <div class="flex items-start gap-4 mb-6">
                   <div class="w-12 h-12 bg-[#E6A619] rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -290,7 +235,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id="project-management" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 id=project-management class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Project Management and Engineering Services
                     </h3>
@@ -322,13 +267,21 @@
                   </div>
                 </div>
               </div>
+              <div class="lg:col-span-1">
+                <img src="~/assets/img/services-xsatro2.jpg" alt="Project Management and Engineering Services"
+                  class="w-full h-64 lg:h-full object-cover" loading="lazy" />
+              </div>
             </div>
           </div>
 
           <!-- Solar Energy Solutions -->
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div class="grid lg:grid-cols-3 gap-0">
-              <div class="lg:col-span-2 p-8 md:p-12">
+              <div class="lg:col-span-1 order-2 lg:order-1">
+                <img src="~/assets/img/services-xsatro6.jpg" alt="Solar Energy Solutions"
+                  class="w-full h-64 lg:h-full object-cover" loading="lazy" />
+              </div>
+              <div class="lg:col-span-2 p-8 md:p-12 order-1 lg:order-2">
                 <div class="flex items-start gap-4 mb-6">
                   <div class="w-12 h-12 bg-[#E6A619] rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -337,7 +290,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id="solar-solutions" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 id=#solar-solutions class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Solar Energy Solutions
                     </h3>
@@ -369,21 +322,13 @@
                   </div>
                 </div>
               </div>
-              <div class="lg:col-span-1">
-                <img src="~/assets/img/services-xsatro6.jpg" alt="Solar Energy Solutions"
-                  class="w-full h-64 lg:h-full object-cover" loading="lazy" />
-              </div>
             </div>
           </div>
 
           <!-- Training and Development -->
           <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
             <div class="grid lg:grid-cols-3 gap-0">
-              <div class="lg:col-span-1 order-2 lg:order-1">
-                <img src="~/assets/img/services-xsatro10.jpg" alt="Training and Development"
-                  class="w-full h-64 lg:h-full object-cover" loading="lazy" />
-              </div>
-              <div class="lg:col-span-2 p-8 md:p-12 order-1 lg:order-2">
+              <div class="lg:col-span-2 p-8 md:p-12">
                 <div class="flex items-start gap-4 mb-6">
                   <div class="w-12 h-12 bg-[#E6A619] rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -392,7 +337,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 id="training-development" class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
+                    <h3 id=#training-development class="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
                       style="font-family: 'Barlow Condensed', sans-serif;">
                       Training and Development
                     </h3>
@@ -424,11 +369,16 @@
                   </div>
                 </div>
               </div>
+              <div class="lg:col-span-1">
+                <img src="~/assets/img/services-xsatro10.jpg" alt="Training and Development"
+                  class="w-full h-64 lg:h-full object-cover" loading="lazy" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- CTA Section -->
     <section class="pt-16 pb-8 mb-12 mx-4 bg-gradient-to-r from-[#335FA8] to-slate-800 -p-2 md:p-0">
 

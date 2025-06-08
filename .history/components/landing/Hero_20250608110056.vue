@@ -60,14 +60,13 @@ import { onBeforeUnmount, onMounted, ref } from 'vue';
 
 // Import images with new paths
 import constructionSite from '/assets/img/construction-site-xstrato.jpg';
-import supplyManagement from '/assets/img/xsatro-supply-slide.jpg';
-import projectMgt from '/assets/img/xstrato-project-mgt.jpg';
-import realEstateValuation from '/assets/img/xstrato-valuation.jpg';
+import roadConstruction from '/assets/img/road-construction-xstrato.jpg';
+import aerialView from '/assets/img/solao-installation-xstrato.jpg';
 
 const SLIDE_DURATION = 8000; // 8 seconds per slide
 const slides = [
   {
-    image: supplyManagement,
+    image: constructionSite,
     alt: 'Procurement supply - XSTRATO',
     title: 'Procurement & Supply Chain',
     description: 'We source and deliver high-quality materials and equipment, ensuring timely, cost-effective support for your projects.',
@@ -75,26 +74,18 @@ const slides = [
     buttonText: 'Learn More'
   },
   {
-    image: realEstateValuation,
-    alt: 'Real Estate Valuation - XSTRATO',
-    title: 'Real Estate & Valuation',
-    description: 'We help you make smart property decisions with accurate valuations, market insight, and trusted advisory support.',
+    image: aerialView,
+    alt: 'Solar Installation - XSTRATO',
+    title: 'Solar Energy Solutions',
+    description: 'We design and install efficient, scalable solar systems that reduce energy costs and support sustainable living.',
     buttonLink: '/services',
     buttonText: 'Learn More'
   },
   {
-    image: projectMgt,
-    alt: 'Project Management - XSTRATO',
-    title: 'Project Management',
-    description: 'We plan, coordinate, and oversee every detail—so your project runs smoothly, stays on track, and delivers results.',
-    buttonLink: '/services',
-    buttonText: 'Learn More'
-  },
-  {
-    image: constructionSite,
+    image: roadConstruction,
     alt: 'Construction Contracting - XSTRATO',
     title: 'Construction & General Contracting',
-    description: 'From residential buildings to commercial and other large-scale infrastructure, we manage every project with speed, integrity, and attention to detail.',
+    description: 'From residential buildings to commercial and other large-scale infrastructure, we manage every project with speed, integrity, and attention to details.',
     buttonLink: '/services',
     buttonText: 'Learn More'
   }

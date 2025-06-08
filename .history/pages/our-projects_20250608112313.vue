@@ -27,7 +27,7 @@
             <!-- Title - centered on mobile -->
             <div class="text-white mb-6">
               <h4 class="text-white text-lg uppercase tracking-wide font-medium mb-3 relative inline-block">
-                <span class="border-b-2 border-[#E6A619] pb-1">XSTRATO PROJECTS</span>
+                <span class="border-b-2 border-[#E6A619] pb-1">XSATRO PROJECTS</span>
               </h4>
             </div>
 
@@ -53,7 +53,7 @@
           <div class="w-24 h-1 bg-[#E6A619] mx-auto mb-8"></div>
           <p class="text-lg md:text-xl text-gray-700">
             From infrastructure development and healthcare facility upgrades to telecommunications networks and
-            renewable energy systems, XSTRATO delivers comprehensive engineering solutions across Nigeria. Our
+            renewable energy systems, XSATRO delivers comprehensive engineering solutions across Nigeria. Our
             multidisciplinary approach combines technical expertise with strategic project management to create lasting
             impact for communities and organizations nationwide.
           </p>
@@ -80,7 +80,7 @@
               <p class="text-sm text-[#E6A619] font-semibold mb-3">Client: Kebbi State Government (World Bank Assisted)
               </p>
               <p class="text-gray-700">
-                XSTRATO delivered procurement consulting services for the World Bank-assisted Kebbi State Health System
+                XSATRO delivered procurement consulting services for the World Bank-assisted Kebbi State Health System
                 Development Project II. Our team provided strategic procurement planning, compliance oversight, and
                 quality assurance to optimize resource allocation and ensure project delivery standards.
               </p>
@@ -96,7 +96,7 @@
               <p class="text-sm text-[#E6A619] font-semibold mb-3">Client: Total Upstream Nigeria Limited (CSR
                 Initiative)</p>
               <p class="text-gray-700">
-                XSTRATO constructed a comprehensive solar-powered borehole and water treatment facility in Brinin Kebni
+                XSATRO constructed a comprehensive solar-powered borehole and water treatment facility in Brinin Kebni
                 for Total Upstream Nigeria's CSR initiative. The project combined renewable energy technology with
                 advanced water treatment systems, delivering sustainable clean water access to the local community.
               </p>
@@ -112,7 +112,7 @@
                 Accreditation</h3>
               <p class="text-sm text-[#E6A619] font-semibold mb-3">Client: Usman Danfodiyo University Sokoto</p>
               <p class="text-gray-700">
-                XSTRATO managed the procurement of critical equipment and specialized supplies for Usman Danfodiyo
+                XSATRO managed the procurement of critical equipment and specialized supplies for Usman Danfodiyo
                 University's Department of Electrical Engineering accreditation requirements. Our team coordinated
                 vendor selection, quality verification, and timely delivery to meet stringent academic standards.
               </p>
@@ -127,8 +127,7 @@
               <h3 class="text-xl font-bold text-gray-900 mb-2">Fibre Network Ducting Infrastructure Development</h3>
               <p class="text-sm text-[#E6A619] font-semibold mb-3">Client: MTN Nigeria</p>
               <p class="text-gray-700">
-                XSTRATO constructed specialized ducting infrastructure for MTN Nigeria's fiber network expansion
-                project.
+                XSATRO constructed specialized ducting infrastructure for MTN Nigeria's fiber network expansion project.
                 The telecommunications infrastructure required precision engineering and strict technical specifications
                 to ensure optimal fiber optic cable protection and network scalability.
               </p>
@@ -144,7 +143,7 @@
               <p class="text-sm text-[#E6A619] font-semibold mb-3">Client: Nigerian Institute of Transport Technology
               </p>
               <p class="text-gray-700">
-                XSTRATO executed the comprehensive rehabilitation of 51 hostel rooms at the Nigerian Institute of
+                XSATRO executed the comprehensive rehabilitation of 51 hostel rooms at the Nigerian Institute of
                 Transport Technology. The project encompassed structural improvements, modern amenities installation,
                 and safety compliance upgrades to enhance student accommodation standards.
               </p>
@@ -160,7 +159,7 @@
               </h3>
               <p class="text-sm text-[#E6A619] font-semibold mb-3">Client: Various Infrastructure Projects</p>
               <p class="text-gray-700">
-                XSTRATO provided specialized project management and engineering consultancy services for complex
+                XSATRO provided specialized project management and engineering consultancy services for complex
                 infrastructure developments. Our team delivered comprehensive technical oversight, quality assurance
                 protocols, and strategic planning support to ensure optimal project delivery and compliance with
                 industry standards.
@@ -181,7 +180,7 @@
         <p class="text-lg text-gray-900 dark:text-gray-200 mb-6 max-w-3xl mx-auto">
           Whether you have a project in mind and you're looking for a reliable construction partner or seeking
           maintenance solutions,
-          our team at <b class="dark:text-white">XSTRATO</b> is ready to deliver excellence at every stage.
+          our team at <b class="dark:text-white">XSATRO</b> is ready to deliver excellence at every stage.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/services"

@@ -80,7 +80,8 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services#real-estate-valuation" class="text-gray-300 hover:text-white transition-colors">
+              <NuxtLink to="/services#construction-and-contracting"
+                class="text-gray-300 hover:text-white transition-colors">
                 Real Estate & Valuation
               </NuxtLink>
             </li>
@@ -90,8 +91,7 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services#construction-and-contracting"
-                class="text-gray-300 hover:text-white transition-colors">
+              <NuxtLink to="/services#solar-solutions" class="text-gray-300 hover:text-white transition-colors">
                 Construction & General Contraacting
               </NuxtLink>
             </li>

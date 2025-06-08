@@ -1,18 +1,19 @@
 <template>
   <main class="relative w-screen h-screen overflow-hidden">
-    <!-- Slides wrapper -->
+    <!-- Slides wrapper - full width with edge-to-edge coverage -->
     <div class="absolute inset-0 w-screen h-full overflow-hidden z-0">
       <transition-group name="fade" tag="div" class="h-full">
         <div v-for="(slide, index) in slides" :key="index" v-show="currentSlide === index"
           class="absolute inset-0 w-screen h-full">
           <img :src="slide.image" :alt="slide.alt" class="w-full h-full object-cover object-center" />
-          <!-- Enhanced gradient overlay for better text contrast -->
-          <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/30" />
+          <!-- Gradient overlay with darker top for navbar contrast -->
+          <!-- Modified gradient - keeps top dark, brightens middle to bottom -->
+          <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/10 to-black/20" />
         </div>
       </transition-group>
     </div>
 
-    <!-- Content overlay -->
+    <!-- Content overlay - positioned closer to bottom and shifted left -->
     <div class="relative z-20 w-full h-full flex flex-col px-6 md:pl-16 lg:pl-24 xl:pl-32">
       <div class="flex flex-col mt-auto mb-16 md:mb-20 lg:mb-28 max-w-3xl mx-auto md:mx-0 mobile-content-position">
         <transition name="slide-up" mode="out-in">
@@ -23,8 +24,7 @@
         </transition>
         <transition name="slide-up" mode="out-in">
           <p :key="'desc-' + currentSlide"
-            class="hero-description mt-4 text-lg md:text-xl text-white max-w-2xl font-normal leading-relaxed px-3 py-2 rounded-md"
-            style="background: rgba(0,0,0,0.25); backdrop-filter: blur(2px); text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5);">
+            class="description-text mt-4 text-lg md:text-xl text-gray-100 max-w-2xl font-light leading-relaxed">
             {{ slides[currentSlide].description }}
           </p>
         </transition>
@@ -60,14 +60,13 @@ import { onBeforeUnmount, onMounted, ref } from 'vue';
 
 // Import images with new paths
 import constructionSite from '/assets/img/construction-site-xstrato.jpg';
-import supplyManagement from '/assets/img/xsatro-supply-slide.jpg';
-import projectMgt from '/assets/img/xstrato-project-mgt.jpg';
-import realEstateValuation from '/assets/img/xstrato-valuation.jpg';
+import roadConstruction from '/assets/img/road-construction-xstrato.jpg';
+import aerialView from '/assets/img/solao-installation-xstrato.jpg';
 
 const SLIDE_DURATION = 8000; // 8 seconds per slide
 const slides = [
   {
-    image: supplyManagement,
+    image: constructionSite,
     alt: 'Procurement supply - XSTRATO',
     title: 'Procurement & Supply Chain',
     description: 'We source and deliver high-quality materials and equipment, ensuring timely, cost-effective support for your projects.',
@@ -75,26 +74,18 @@ const slides = [
     buttonText: 'Learn More'
   },
   {
-    image: realEstateValuation,
-    alt: 'Real Estate Valuation - XSTRATO',
-    title: 'Real Estate & Valuation',
-    description: 'We help you make smart property decisions with accurate valuations, market insight, and trusted advisory support.',
+    image: aerialView,
+    alt: 'Solar Installation - XSTRATO',
+    title: 'Solar Energy Solutions',
+    description: 'We design and install efficient, scalable solar systems that reduce energy costs and support sustainable living.',
     buttonLink: '/services',
     buttonText: 'Learn More'
   },
   {
-    image: projectMgt,
-    alt: 'Project Management - XSTRATO',
-    title: 'Project Management',
-    description: 'We plan, coordinate, and oversee every detail—so your project runs smoothly, stays on track, and delivers results.',
-    buttonLink: '/services',
-    buttonText: 'Learn More'
-  },
-  {
-    image: constructionSite,
+    image: roadConstruction,
     alt: 'Construction Contracting - XSTRATO',
     title: 'Construction & General Contracting',
-    description: 'From residential buildings to commercial and other large-scale infrastructure, we manage every project with speed, integrity, and attention to detail.',
+    description: 'From residential buildings to large-scale infrastructure, we manage every project with speed, integrity, and attention to details.',
     buttonLink: '/services',
     buttonText: 'Learn More'
   }
@@ -172,6 +163,7 @@ onBeforeUnmount(() => {
   line-height: 1.05;
   letter-spacing: 0.01em;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 0.5px white;
 }
 
 .hero-heading {
@@ -181,8 +173,16 @@ onBeforeUnmount(() => {
     0 0 1px #fff;
 }
 
-.hero-description {
-  transition: all 0.3s ease;
+/* Enhanced description text with better contrast */
+.description-text {
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.8),
+    0 1px 3px rgba(0, 0, 0, 0.9),
+    1px 1px 2px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+  backdrop-filter: blur(2px);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .w-screen {
@@ -195,21 +195,20 @@ onBeforeUnmount(() => {
     text-align: center;
   }
 
-  .hero-description {
+  p {
     text-align: center;
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: 0.5rem;
-    background: rgba(0, 0, 0, 0.35) !important;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
   }
 
+  /* Mobile content positioning - shift content up to center it better */
   .mobile-content-position {
     margin-bottom: 8rem !important;
+    /* Increased from mb-16 (4rem) to 8rem */
     transform: translateY(-10vh);
+    /* Additional upward shift */
   }
 }
 
+/* Fine-tune for very small screens */
 @media (max-width: 480px) {
   .mobile-content-position {
     margin-bottom: 6rem !important;

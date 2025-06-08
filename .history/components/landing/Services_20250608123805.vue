@@ -183,7 +183,7 @@
                                 requirements and business objectives.
                             </p>
                             <div class="mt-auto">
-                                <NuxtLink to="/services"
+                                <NuxtLink to="/services#additional-services"
                                     class="inline-flex items-center text-orange-700 font-semibold hover:text-orange-800 transition-colors group">
                                     <span class="text-sm">LEARN MORE</span>
                                     <span

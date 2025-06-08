@@ -61,7 +61,7 @@ import { onBeforeUnmount, onMounted, ref } from 'vue';
 // Import images with new paths
 import constructionSite from '/assets/img/construction-site-xstrato.jpg';
 import supplyManagement from '/assets/img/xsatro-supply-slide.jpg';
-import projectMgt from '/assets/img/xstrato-project-mgt.jpg';
+import aerialView from '/assets/img/xstrato-project-mgt.jpg';
 import realEstateValuation from '/assets/img/xstrato-valuation.jpg';
 
 const SLIDE_DURATION = 8000; // 8 seconds per slide
@@ -83,10 +83,10 @@ const slides = [
     buttonText: 'Learn More'
   },
   {
-    image: projectMgt,
-    alt: 'Project Management - XSTRATO',
-    title: 'Project Management',
-    description: 'We plan, coordinate, and oversee every detail—so your project runs smoothly, stays on track, and delivers results.',
+    image: aerialView,
+    alt: 'Solar Installation - XSTRATO',
+    title: 'Solar Energy Solutions',
+    description: 'We design and install efficient, scalable solar systems that reduce energy costs and support sustainable living.',
     buttonLink: '/services',
     buttonText: 'Learn More'
   },

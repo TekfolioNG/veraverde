@@ -176,14 +176,14 @@
                             </div>
                             <h4 class="text-xl font-bold text-[#002244] mb-4"
                                 style="font-family: 'Barlow Condensed', sans-serif;">
-                                Consultancy Services
+                                Additional Services
                             </h4>
                             <p class="text-gray-600 mb-6 leading-relaxed">
                                 Specialized consulting and technical services tailored to meet your unique project
                                 requirements and business objectives.
                             </p>
                             <div class="mt-auto">
-                                <NuxtLink to="/services"
+                                <NuxtLink to="/services#additional-services"
                                     class="inline-flex items-center text-orange-700 font-semibold hover:text-orange-800 transition-colors group">
                                     <span class="text-sm">LEARN MORE</span>
                                     <span
