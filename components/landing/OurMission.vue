@@ -35,7 +35,8 @@
                     <!-- Video element -->
                     <video ref="founderVideo" class="w-full h-auto rounded-2xl" poster="~/assets/img/founder-poster.png"
                         preload="metadata" controls @play="onVideoPlay" @pause="onVideoPause" @ended="onVideoEnded">
-                        <source src="~/assets/video/veraverde-video.mp4" type="video/mp4">
+                        <source src="https://pub-9c521f4c51b34d61b7ad664a56247288.r2.dev/veraverde-assets.mp4"
+                            type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
 
