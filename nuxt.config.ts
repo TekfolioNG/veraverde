@@ -12,7 +12,8 @@ export default defineNuxtConfig({
   },
   modules: [
     "nuxt-icon",
-    "@nuxt/ui"
+    "@nuxt/ui",
+    "@nuxt/image"
   ],
   ui: {
     fonts: true

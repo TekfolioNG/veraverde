@@ -1,103 +1,196 @@
 <template>
-  <!-- Hero-style layout with diagonal accent -->
-  <section class="relative bg-gradient-to-br from-slate-50 to-white py-16 md:py-20 lg:py-24 overflow-hidden">
-    <!-- Subtle geometric background -->
-    <div class="absolute inset-0 opacity-5">
-      <div class="absolute top-10 right-10 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
-      <div class="absolute bottom-20 left-20 w-48 h-48 bg-yellow rounded-full blur-2xl"></div>
+  <!-- Clean, nature-inspired layout -->
+  <section class="relative bg-gradient-to-br from-green-50 to-white overflow-hidden">
+    <!-- Subtle background elements -->
+    <div class="absolute inset-0 z-0 opacity-10">
+      <div class="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-primary/20 blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/3 w-48 h-48 rounded-full bg-accent/20 blur-2xl"></div>
     </div>
 
-    <div class="container mx-auto px-6 md:px-8 lg:px-12 relative">
-      <!-- Header with centered approach -->
-      <div class="text-center mb-12 md:mb-16">
-        <!-- Company identifier -->
-        <div class="inline-flex items-center mb-4">
-          <div class="w-8 h-0.5 bg-yellow mr-3"></div>
-          <span class="text-sm uppercase tracking-wider font-medium text-gray-600">XSTRATOPRIME</span>
-          <div class="w-8 h-0.5 bg-yellow ml-3"></div>
-        </div>
-
-        <!-- Main value proposition -->
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight max-w-4xl mx-auto"
-          style="font-family: 'Barlow Condensed', sans-serif;">
-          We bring innovation and experienced hands to construction and energy projects
-        </h2>
+    <!-- Main content container -->
+    <div class="container mx-auto px-6 md:px-8 lg:px-12 relative z-10 py-16 md:py-24 lg:py-32">
+      <!-- Company identifier - spans across both columns -->
+      <div class="flex items-center justify-center mb-12">
+        <div class="w-12 h-0.5 bg-accent mr-4 hidden md:block"></div>
+        <span class="text-base uppercase tracking-wider font-medium text-primary text-center">
+          <b>Vera Verde</b> means True Green
+        </span>
+        <div class="w-12 h-0.5 bg-accent ml-4 hidden md:block"></div>
       </div>
 
-      <!-- Single column content layout -->
-      <div class="max-w-5xl mx-auto mb-16">
-        <div class="prose prose-lg max-w-none">
-          <p class="text-lg md:text-xl text-gray-800 leading-relaxed mb-6">
-            XstratoPrime is a multidisciplinary firm helping people and organizations deliver projects that matter.
-            We work at the intersection of <span class="font-semibold text-primary">construction</span>,
-            <span class="font-semibold text-primary">solar energy</span>, and
-            <span class="font-semibold text-primary">workforce training</span>—three areas where practical solutions can
-            drive real change.
-          </p>
+      <div class="flex flex-col lg:flex-row items-center gap-8 md:gap-12 xl:gap-16">
+        <!-- Text content -->
+        <div class="lg:w-1/2 space-y-6 md:space-y-8">
+          <!-- Mission header -->
+          <div class="space-y-2">
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                  clip-rule="evenodd" />
+              </svg>
+              <h2 class="text-sm uppercase tracking-wider font-medium text-primary">Our Mission</h2>
+            </div>
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              Igniting <span class="text-primary">a sustainable</span> future
+            </h1>
+          </div>
 
-          <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
-            From our base in Nigeria, we've completed over <strong>40 civil and industrial construction
-              projects</strong>,
-            trained more than <strong>1,000 technicians and artisans</strong>, and deployed <strong>500+ solar
-              installations</strong>
-            across the country. Our work spans private, public, and community-driven sectors.
-          </p>
+          <!-- Mission content -->
+          <div class="prose max-w-none text-gray-700 space-y-4 md:space-y-6">
+            <p class="text-base md:text-lg">
+              <span class="font-semibold text-primary">Vera Verde</span> Limited
+              is a forward-thinking green innovation company committed to
+              advancing sustainable development through climate-smart agriculture, clean energy
+              solutions, and environmental stewardship.
+            </p>
 
-          <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
-            We're not a one-size-fits-all contractor. Each project is treated with its own lens—planned, managed,
-            and delivered with care. Whether it's a school block in a rural town, a smart energy solution for a
-            growing business, or hands-on technical training for local youth, we show up with the same goal:
-            to create value that lasts.
-          </p>
+            <p class="text-sm md:text-base">
+              Based in Nigeria, our operations span across<span class="font-semibold"> farming communities, rice mill
+                clusters,</span> and
+              <span class="font-semibold">ecofuel processing hubs.</span>We collaborate with
+              farmers, cooperatives, and institutions to deliver solutions that reduce emissions, enhance
+              soil health, and generate economic value
+            </p>
 
-          <div class="max-w-3xl mx-auto">
-            <div class="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg">
-              <p class="text-base md:text-lg text-gray-800 italic leading-relaxed">
-                At the heart of XstratoPrime is a team of engineers, builders, trainers, and problem-solvers
-                who care about doing good work and doing it right.
-              </p>
+            <p class="text-sm md:text-base">
+              We're not just reducing carbon; we're building better harvests, cleaner energy, and climate-resilient
+              communities.
+            </p>
+          </div>
+
+          <!-- Visual element - Mobile positioned here -->
+          <div class="w-full lg:hidden relative my-8">
+            <div class="relative">
+              <!-- Main visual container - Enhanced for mobile -->
+              <div
+                class="relative aspect-[4/3] w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-xl border-2 border-white bg-gradient-to-br from-green-100 via-white to-accent/10 floating-gentle">
+                <!-- Before/After Transformation Images -->
+                <div class="absolute inset-0 flex">
+                  <!-- Rice Husk (Before) -->
+                  <div class="w-1/2 relative overflow-hidden">
+                    <img src="~/assets/img/rice-husk.jpg" alt="Rice husk agricultural waste"
+                      class="w-full h-full object-cover">
+                    <div
+                      class="absolute bottom-2 left-2 bg-black/70 text-white px-2 py-1 rounded-full text-xs font-medium">
+                      Waste
+                    </div>
+                  </div>
+
+                  <!-- Transformation Arrow - Mobile optimized -->
+                  <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                    <div class="bg-white rounded-full p-1.5 shadow-lg">
+                      <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- Bio-coal (After) -->
+                  <div class="w-1/2 relative overflow-hidden">
+                    <img src="~/assets/img/bio-coal.jpg" alt="Biochar and briquettes climate solution"
+                      class="w-full h-full object-cover">
+                    <div
+                      class="absolute bottom-2 right-2 bg-primary/90 text-white px-2 py-1 rounded-full text-xs font-medium">
+                      Solution
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Decorative floating elements - Mobile version -->
+              <div
+                class="absolute -bottom-4 -left-4 h-16 w-16 rounded-full bg-gradient-to-br from-accent/30 to-primary/20 blur-xl">
+              </div>
+              <div
+                class="absolute -top-4 -right-4 h-12 w-12 rounded-full bg-gradient-to-br from-primary/20 to-secondary/30 blur-lg">
+              </div>
+
+              <!-- Small accent dots - Mobile -->
+              <div class="absolute top-4 left-4 w-2 h-2 bg-primary rounded-full opacity-60"></div>
+              <div class="absolute bottom-8 right-8 w-1.5 h-1.5 bg-accent rounded-full opacity-80"></div>
             </div>
           </div>
+
+          <div
+            class="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-4 md:p-6 border-l-4 border-[#406112]">
+            <p class="text-sm md:text-base lg:text-lg text-gray-800 leading-relaxed font-medium italic">
+              With the right partners and support, we aim to scale our work toward certified carbon
+              credits
+              and greater environmental impact.
+            </p>
+          </div>
+
+          <!-- Learn more button -->
+          <div class="pt-4 text-center lg:text-left">
+            <NuxtLink to="/about-us"
+              class="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors duration-300 group">
+              <span>Learn more about us</span>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </NuxtLink>
+          </div>
         </div>
-      </div>
 
-      <!-- Stats section - horizontal layout at bottom -->
-      <div class="max-w-7xl mx-auto">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6 mb-12">
-          <div v-for="(stat, index) in stats" :key="index"
-            class="group bg-white p-4 lg:p-6 rounded-xl shadow-soft border border-gray-100 hover:shadow-elevated hover:border-primary/20 transition-all duration-500 text-center">
-
-            <!-- Large number display -->
-            <div class="mb-2">
-              <span class="text-xl lg:text-2xl font-black text-primary block leading-none">
-                <span ref="counterRefs" :data-target="stat.targetValue" :data-prefix="stat.prefix || ''"
-                  :data-suffix="stat.suffix || ''" class="counter">0</span>
-              </span>
-            </div>
-
-            <!-- Stat description -->
-            <div class="space-y-1">
-              <h4 class="text-xs lg:text-sm font-semibold text-gray-900 leading-tight">
-                {{ stat.title }}
-              </h4>
-              <p class="text-xs text-gray-600 leading-snug">
-                {{ stat.description }}
-              </p>
-            </div>
-
-            <!-- Subtle accent line -->
+        <!-- Visual element - Desktop only -->
+        <div class="hidden lg:block lg:w-2/5 relative">
+          <div class="relative">
+            <!-- Main visual container - Enhanced for desktop -->
             <div
-              class="w-full h-0.5 bg-gradient-to-r from-yellow to-transparent mt-3 group-hover:from-primary transition-colors duration-500">
-            </div>
-          </div>
-        </div>
+              class="relative aspect-[4/3.2] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-green-100 via-white to-accent/10 floating-gentle">
+              <!-- Before/After Transformation Images -->
+              <div class="absolute inset-0 flex">
+                <!-- Rice Husk (Before) -->
+                <div class="w-1/2 relative overflow-hidden">
+                  <img src="~/assets/img/rice-husk.jpg" alt="Rice husk agricultural waste"
+                    class="w-full h-full object-cover">
+                  <div
+                    class="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    Agricultural Waste
+                  </div>
+                </div>
 
-        <!-- About Us Button -->
-        <div class="text-center">
-          <NuxtLink to="/about-us"
-            class="inline-block px-8 py-3 bg-custom-blue text-white font-medium rounded-lg hover:bg-custom-blue-dark transition-colors duration-300 shadow-md hover:shadow-lg">
-            About Us →
-          </NuxtLink>
+                <!-- Transformation Arrow - Desktop -->
+                <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                  <div class="bg-white rounded-full p-2 shadow-lg">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Bio-coal (After) -->
+                <div class="w-1/2 relative overflow-hidden">
+                  <img src="~/assets/img/bio-coal.jpg" alt="Biochar and briquettes climate solution"
+                    class="w-full h-full object-cover">
+                  <div
+                    class="absolute bottom-4 right-4 bg-gradient-to-br from-[#2d420c] to-[#406112] text-white px-3 py-1 rounded-full text-sm font-medium">
+                    Climate Solution
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Decorative floating elements - Desktop -->
+            <div
+              class="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-gradient-to-br from-accent/30 to-primary/20 blur-2xl">
+            </div>
+            <div
+              class="absolute -top-6 -right-6 h-20 w-20 rounded-full bg-gradient-to-br from-primary/20 to-secondary/30 blur-xl">
+            </div>
+
+            <!-- Small accent dots - Desktop -->
+            <div class="absolute top-8 left-8 w-3 h-3 bg-primary rounded-full opacity-60"></div>
+            <div class="absolute bottom-12 right-12 w-2 h-2 bg-accent rounded-full opacity-80"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -105,182 +198,87 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
-
-// Restructured stats data with cleaner presentation
-const stats = [
-  {
-    targetValue: 10,
-    suffix: "+",
-    title: "Years of Consistent Delivery",
-    description: "Building trust through quality work since 2015."
-  },
-  {
-    targetValue: 40,
-    suffix: "+",
-    title: "Construction Projects Completed",
-    description: "Spanning roads, buildings, and civil infrastructure."
-  },
-  {
-    targetValue: 1000,
-    suffix: "+",
-    title: "Technicians & Artisans Trained",
-    description: "Empowering Nigeria's technical workforce."
-  },
-  {
-    targetValue: 500,
-    suffix: "+",
-    title: "Solar Systems Installed",
-    description: "Delivering cleaner energy, one system at a time."
-  },
-  {
-    targetValue: 6,
-    title: "Key Sectors Served",
-    description: "Including education, healthcare, energy, and more."
-  },
-  {
-    targetValue: 1,
-    title: "Guiding Focus",
-    description: "Practical solutions. Long-term value."
-  }
-];
-
-const counterRefs = ref([]);
-
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // Animate all counters with staggered timing
-        document.querySelectorAll('.counter').forEach((counter, index) => {
-          setTimeout(() => {
-            const target = parseInt(counter.getAttribute('data-target'));
-            const prefix = counter.getAttribute('data-prefix') || '';
-            const suffix = counter.getAttribute('data-suffix') || '';
-
-            let startValue = 0;
-            const duration = 2500;
-            const increment = target / (duration / 16);
-
-            const updateCounter = () => {
-              startValue += increment;
-
-              if (startValue < target) {
-                counter.textContent = prefix + Math.floor(startValue) + suffix;
-                requestAnimationFrame(updateCounter);
-              } else {
-                counter.textContent = prefix + target + suffix;
-              }
-            };
-
-            updateCounter();
-          }, index * 150); // Stagger animation by 150ms per item
-        });
-
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-
-  // Observe the stats section
-  const statsSection = document.querySelector('.max-w-7xl');
-  if (statsSection) {
-    observer.observe(statsSection);
-  }
-});
+// No additional script needed
 </script>
 
 <style scoped>
-/* Custom blue for About Us button */
-.bg-custom-blue {
-  background-color: #335FA8;
-}
-
-.bg-custom-blue-dark {
-  background-color: #2d5296;
-}
-
-/* Color system */
+/* Brand colors */
 .bg-primary {
-  background-color: #003366;
+  background-color: #406112;
 }
 
 .text-primary {
-  color: #003366;
+  color: #406112;
 }
 
-.border-primary {
-  border-color: #003366;
+.bg-primary-dark {
+  background-color: #2f4a0d;
 }
 
-.bg-yellow {
-  background-color: #FFB81C;
+.bg-accent {
+  background-color: #E6A619;
 }
 
-.from-yellow {
-  --tw-gradient-from: #FFB81C;
+/* Gentle floating animation */
+.floating-gentle {
+  animation: float 4.5s ease-in-out infinite;
 }
 
-.to-yellow {
-  --tw-gradient-to: #FFB81C;
-}
+@keyframes float {
 
-.from-primary {
-  --tw-gradient-from: #003366;
-}
-
-/* Enhanced shadows */
-.shadow-soft {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.shadow-elevated {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-/* Typography enhancements */
-.prose {
-  max-width: none;
-}
-
-.prose p {
-  margin-bottom: 1.5rem;
-}
-
-/* Counter animation improvements */
-.counter {
-  display: inline-block;
-  font-variant-numeric: tabular-nums;
-  min-width: 2ch;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1023px) {
-
-  /* Stack stats responsively */
-  .grid-cols-2.md\:grid-cols-3.lg\:grid-cols-6 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  0%,
+  100% {
+    transform: translateY(0px);
   }
-}
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .grid-cols-2.md\:grid-cols-3.lg\:grid-cols-6 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  50% {
+    transform: translateY(-8px);
   }
 }
 
 /* Smooth transitions */
-.transition-all {
-  transition-property: all;
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
-/* Group hover effects */
-.group:hover .group-hover\:from-primary {
-  --tw-gradient-from: #003366;
+/* Prose content styling */
+.prose {
+  color: #374151;
+}
+
+.prose p {
+  margin-bottom: 1.25em;
+  line-height: 1.625;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  .floating-gentle {
+    animation: float 4.5s ease-in-out infinite;
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-6px);
+    }
+  }
 }
 </style>

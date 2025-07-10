@@ -22,10 +22,10 @@ useHead({
 <template>
   <LandingContainer>
     <LandingHero></LandingHero>
-    <LandingIntro></LandingIntro>
-    <LandingServices></LandingServices>
-    <LandingParallax></LandingParallax>
-    <LandingOurPromise></LandingOurPromise>
-    <LandingCta></LandingCta>
   </LandingContainer>
+  <LandingIntro></LandingIntro>
+  <LandingStats></LandingStats>
+  <LandingOurMission></LandingOurMission>
+  <LandingServices></LandingServices>
+  <LandingCta></LandingCta>
 </template>

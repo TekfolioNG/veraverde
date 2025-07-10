@@ -12,29 +12,31 @@
       </transition-group>
     </div>
 
-    <!-- Content overlay -->
+    <!-- Content overlay with proper navbar spacing -->
     <div class="relative z-20 w-full h-full flex flex-col px-6 md:pl-16 lg:pl-24 xl:pl-32">
-      <div class="flex flex-col mt-auto mb-16 md:mb-20 lg:mb-28 max-w-3xl mx-auto md:mx-0 mobile-content-position">
-        <transition name="slide-up" mode="out-in">
-          <h1 :key="'title-' + currentSlide"
-            class="hero-heading font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-black tracking-wider-custom leading-tight">
-            {{ slides[currentSlide].title }}
-          </h1>
+      <!-- Add top spacing to avoid navbar clash -->
+      <div
+        class="flex-1 flex flex-col justify-center items-start pt-32 md:pt-40 lg:pt-44 pb-32 md:pb-20 lg:pb-28 max-w-3xl mx-auto md:mx-0 hero-content-container">
+        <transition name="content-fade" mode="out-in">
+          <div :key="'content-' + currentSlide">
+            <h1
+              class="hero-heading font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-black tracking-wider-custom leading-tight">
+              {{ slides[currentSlide].title }}
+            </h1>
+            <p v-if="slides[currentSlide].description"
+              class="hero-description mt-4 md:mt-6 text-lg md:text-xl text-white max-w-2xl font-normal leading-relaxed px-3 py-2 rounded-md"
+              style="background: rgba(0,0,0,0.5); backdrop-filter: blur(2px); text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5);">
+              {{ slides[currentSlide].description }}
+            </p>
+            <div v-if="slides[currentSlide].buttonText" class="mt-8 w-full flex justify-start hero-button-container">
+              <NuxtLink :to="slides[currentSlide].buttonLink"
+                class="px-6 py-3 text-white font-medium transition-all duration-300 text-lg transform hover:scale-105 inline-block"
+                :style="{ backgroundColor: '#406112' }">
+                {{ slides[currentSlide].buttonText }}
+              </NuxtLink>
+            </div>
+          </div>
         </transition>
-        <transition name="slide-up" mode="out-in">
-          <p :key="'desc-' + currentSlide"
-            class="hero-description mt-4 text-lg md:text-xl text-white max-w-2xl font-normal leading-relaxed px-3 py-2 rounded-md"
-            style="background: rgba(0,0,0,0.25); backdrop-filter: blur(2px); text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.5);">
-            {{ slides[currentSlide].description }}
-          </p>
-        </transition>
-        <div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
-          <NuxtLink :to="slides[currentSlide].buttonLink"
-            class="px-6 py-3 text-white font-medium transition-all duration-300 text-lg transform hover:scale-105"
-            :style="{ backgroundColor: '#F3912C' }">
-            {{ slides[currentSlide].buttonText }}
-          </NuxtLink>
-        </div>
       </div>
     </div>
 
@@ -42,14 +44,14 @@
     <div class="absolute bottom-8 left-0 right-0 z-30 flex justify-center gap-2">
       <button v-for="(_, index) in slides" :key="index" @click="setSlide(index)"
         class="w-12 h-1.5 transition-all duration-300 rounded-full"
-        :class="currentSlide === index ? 'bg-orange-500' : 'bg-white/40 hover:bg-white/60'"
+        :class="currentSlide === index ? 'bg-[#99cc33]' : 'bg-white/40 hover:bg-white/60'"
         :aria-label="`Go to slide ${index + 1}`">
       </button>
     </div>
 
     <!-- Progress bar -->
     <div class="absolute bottom-0 left-0 right-0 z-30 h-1 bg-white/20">
-      <div class="bg-orange-500 h-full transition-all duration-300 ease-linear" :style="{ width: `${progress}%` }">
+      <div class="bg-[#99cc33] h-full transition-all duration-300 ease-linear" :style="{ width: `${progress}%` }">
       </div>
     </div>
   </main>
@@ -59,44 +61,35 @@
 import { onBeforeUnmount, onMounted, ref } from 'vue';
 
 // Import images with new paths
-import constructionSite from '/assets/img/construction-site-xstrato.jpg';
-import supplyManagement from '/assets/img/xsatro-supply-slide.jpg';
-import projectMgt from '/assets/img/xstrato-project-mgt.jpg';
-import realEstateValuation from '/assets/img/xstrato-valuation.jpg';
+import slider2 from '~/assets/img/slider2-veraverde.jpg';
+import slider3 from '~/assets/img/slider3-veraverde.jpg';
+import slider1 from '~/assets/img/slider4-veraverde.jpg';
 
 const SLIDE_DURATION = 8000; // 8 seconds per slide
 const slides = [
   {
-    image: supplyManagement,
-    alt: 'Procurement supply - XSTRATO',
-    title: 'Procurement & Supply Chain',
-    description: 'We source and deliver high-quality materials and equipment, ensuring timely, cost-effective support for your projects.',
+    image: slider1,
+    alt: 'Climate-Smart Agriculture',
+    title: 'Farming That Nurtures the Earth',
+    description: 'We help farmers grow more, waste less, and protect the land they rely on.',
     buttonLink: '/services',
-    buttonText: 'Learn More'
+    buttonText: 'Here\'s How'
   },
   {
-    image: realEstateValuation,
-    alt: 'Real Estate Valuation - XSTRATO',
-    title: 'Real Estate & Valuation',
-    description: 'We help you make smart property decisions with accurate valuations, market insight, and trusted advisory support.',
+    image: slider2,
+    alt: 'Carbon Sequestration',
+    title: 'Turning Carbon into Soil Health',
+    description: 'We lock carbon in the soil using biochar—helping the planet and boosting harvests.',
     buttonLink: '/services',
-    buttonText: 'Learn More'
+    buttonText: 'How It Works'
   },
   {
-    image: projectMgt,
-    alt: 'Project Management - XSTRATO',
-    title: 'Project Management',
-    description: 'We plan, coordinate, and oversee every detail—so your project runs smoothly, stays on track, and delivers results.',
+    image: slider3,
+    alt: 'Ecofuel Briquettes',
+    title: 'Clean Energy from Farm Waste',
+    description: 'We turn sawdust and rice husk into eco-briquettes—an affordable, smokeless alternative.',
     buttonLink: '/services',
-    buttonText: 'Learn More'
-  },
-  {
-    image: constructionSite,
-    alt: 'Construction Contracting - XSTRATO',
-    title: 'Construction & General Contracting',
-    description: 'From residential buildings to commercial and other large-scale infrastructure, we manage every project with speed, integrity, and attention to detail.',
-    buttonLink: '/services',
-    buttonText: 'Learn More'
+    buttonText: 'Our Green Energy Solution'
   }
 ]
 
@@ -140,6 +133,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+/* Background image transition */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 1.5s ease;
@@ -150,19 +144,15 @@ onBeforeUnmount(() => {
   opacity: 0;
 }
 
-.slide-up-enter-active,
-.slide-up-leave-active {
-  transition: opacity 1.8s ease, transform 1.8s ease;
+/* Content transition - synchronized for all elements */
+.content-fade-enter-active,
+.content-fade-leave-active {
+  transition: opacity 1.8s ease-in-out;
 }
 
-.slide-up-enter-from {
+.content-fade-enter-from,
+.content-fade-leave-to {
   opacity: 0;
-  transform: translateY(40px);
-}
-
-.slide-up-leave-to {
-  opacity: 0;
-  transform: translateY(-20px);
 }
 
 .font-heading,
@@ -181,39 +171,59 @@ onBeforeUnmount(() => {
     0 0 1px #fff;
 }
 
-.hero-description {
-  transition: all 0.3s ease;
-}
-
 .w-screen {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 }
 
+/* Desktop spacing adjustments */
+.hero-content-container {
+  min-height: calc(100vh - 8rem);
+}
+
+/* Mobile responsive adjustments */
 @media (max-width: 767px) {
+  .hero-content-container {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
   .hero-heading {
-    text-align: center;
+    font-size: 2.5rem;
   }
 
   .hero-description {
-    text-align: center;
     font-size: 1rem;
     line-height: 1.5;
-    padding: 0.5rem;
-    background: rgba(0, 0, 0, 0.35) !important;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+    padding: 0.75rem;
+    margin-top: 1rem !important;
   }
 
-  .mobile-content-position {
-    margin-bottom: 8rem !important;
-    transform: translateY(-10vh);
+  /* Center buttons on mobile */
+  .hero-button-container {
+    justify-content: center !important;
   }
 }
 
 @media (max-width: 480px) {
-  .mobile-content-position {
-    margin-bottom: 6rem !important;
-    transform: translateY(-8vh);
+  .hero-content-container {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+  }
+}
+
+/* Large desktop screens - more spacing */
+@media (min-width: 1280px) {
+  .hero-content-container {
+    padding-top: 12rem;
+    padding-bottom: 3rem;
   }
 }
 </style>

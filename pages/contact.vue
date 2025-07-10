@@ -26,9 +26,7 @@ const resetForm = () => {
   })
 }
 
-// Replace the existing submitForm function with this updated version
-
-// Optional: Add form validation function
+// Form validation function
 const validateForm = () => {
   const errors = []
 
@@ -51,11 +49,11 @@ const validateForm = () => {
   return errors
 }
 
-// Submit form function using Nuxt's $fetch
+// Submit form function
 const submitForm = async (event) => {
   const form = event.target
 
-  // Optional: Client-side validation
+  // Client-side validation
   const validationErrors = validateForm()
   if (validationErrors.length > 0) {
     formStatus.value = {
@@ -82,21 +80,17 @@ const submitForm = async (event) => {
   }
 
   try {
-    // Use Nuxt's $fetch instead of native fetch
     const result = await $fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       body: data,
-      // $fetch automatically handles JSON parsing
       headers: {
         'Accept': 'application/json'
       },
-      // Add timeout and retry options
-      timeout: 30000, // 30 seconds timeout
-      retry: 2, // Retry up to 2 times on failure
-      retryDelay: 1000 // Wait 1 second between retries
+      timeout: 30000,
+      retry: 2,
+      retryDelay: 1000
     })
 
-    // Check if the submission was successful
     if (result.success) {
       formStatus.value = {
         loading: false,
@@ -106,7 +100,6 @@ const submitForm = async (event) => {
       }
       resetForm()
 
-      // Auto-hide success message after 5 seconds
       setTimeout(() => {
         formStatus.value.message = ''
         formStatus.value.success = false
@@ -117,7 +110,6 @@ const submitForm = async (event) => {
   } catch (error) {
     console.error('Form submission error:', error)
 
-    // Better error handling with more specific messages
     let errorMessage = 'An unexpected error occurred. Please try again.'
 
     if (error.name === 'TimeoutError') {
@@ -141,7 +133,6 @@ const submitForm = async (event) => {
       message: errorMessage
     }
 
-    // Auto-hide error message after 8 seconds
     setTimeout(() => {
       formStatus.value.message = ''
       formStatus.value.error = false
@@ -156,25 +147,25 @@ definePageMeta({
 
 // SEO head configuration
 useHead({
-  title: 'Contact Us - Xstrato Prime Nigeria Limited',
+  title: 'Contact Us - Vera Verde Limited',
   meta: [
-    { name: 'description', content: 'Contact Xstrato Prime Nigeria Limited for engineering and construction services. Reach us at our Port Harcourt head office or Abuja branch office.' },
-    { name: 'keywords', content: 'contact xstrato, engineering consultation, construction services nigeria, port harcourt office, abuja office' },
-    { property: 'og:title', content: 'Contact Us - Xstrato Prime Nigeria Limited | Engineering Excellence' },
-    { property: 'og:description', content: 'Get in touch with Xstrato Prime Nigeria Limited for innovative infrastructure solutions. Visit our offices in Port Harcourt or Abuja.' },
-    { property: 'og:image', content: 'https://xstrato.com/xstrato-contact-og-image.jpg' },
+    { name: 'description', content: 'Contact Vera Verde Limited for sustainable agriculture and clean energy solutions. Reach us at our Minna head office in Niger State, Nigeria.' },
+    { name: 'keywords', content: 'contact vera verde, sustainable agriculture, clean energy nigeria, minna office, ecofuel solutions' },
+    { property: 'og:title', content: 'Contact Us - Vera Verde Limited | Sustainable Solutions' },
+    { property: 'og:description', content: 'Get in touch with Vera Verde Limited for climate-smart agricultural solutions and sustainable ecofuel technologies.' },
+    { property: 'og:image', content: 'https://veraverde.com/contact-og-image.jpg' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
-    { property: 'og:image:alt', content: 'Contact Xstrato Prime Nigeria Limited' },
+    { property: 'og:image:alt', content: 'Contact Vera Verde Limited' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Contact Us - Xstrato Prime Nigeria Limited' },
-    { name: 'twitter:description', content: 'Get in touch with Xstrato Prime Nigeria Limited for innovative infrastructure solutions.' },
-    { name: 'twitter:image', content: 'https://xstrato.com/xstrato-contact-og-image.jpg' },
+    { name: 'twitter:title', content: 'Contact Us - Vera Verde Limited' },
+    { name: 'twitter:description', content: 'Get in touch with Vera Verde Limited for sustainable agricultural solutions.' },
+    { name: 'twitter:image', content: 'https://veraverde.com/contact-og-image.jpg' },
     { name: 'robots', content: 'index, follow' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://xstrato.com/contact' }
+    { rel: 'canonical', href: 'https://veraverde.com/contact' }
   ]
 })
 </script>
@@ -184,7 +175,7 @@ useHead({
     <!-- Hero Section with Contact Info Overlay -->
     <section class="relative w-full min-h-screen overflow-hidden pt-20 md:pt-24">
       <!-- Background Gradient -->
-      <div class="absolute inset-0 bg-gradient-to-br from-[#001122] via-[#002244] to-[#003366]"></div>
+      <div class="absolute inset-0 bg-[#0f2409]"></div>
 
       <!-- Animated Background Pattern -->
       <div class="absolute inset-0 opacity-20">
@@ -199,18 +190,17 @@ useHead({
       <!-- Content Container -->
       <div class="relative z-10 container mx-auto px-6 py-12 md:py-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-
           <!-- Left Side - Animation & Title -->
           <div class="text-center lg:text-left order-2 lg:order-1">
             <div class="mb-6 md:mb-8">
               <DotLottieVue style="height: 280px; width: 280px" class="mx-auto lg:mx-0 md:!h-[320px] md:!w-[320px]"
-                autoplay loop src="https://lottie.host/d53719be-b868-4298-80c2-c7397958273a/veH5wxdKqv.lottie" />
+                autoplay loop src="https://lottie.host/8b8dd837-0019-4a06-8457-790847e7f3e9/l50uZweUGU.lottie" />
             </div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 font-barlow">
               LET'S CONNECT
             </h1>
             <p class="text-lg md:text-xl text-gray-300 max-w-lg mx-auto lg:mx-0">
-              Ready to start your next project? We're here to help bring your vision to life.
+              Ready to discuss sustainable solutions? We're here to help with your agricultural and energy needs.
             </p>
           </div>
 
@@ -221,7 +211,7 @@ useHead({
               class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 md:p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105">
               <div class="flex items-start space-x-3 md:space-x-4">
                 <div
-                  class="w-10 h-10 md:w-12 md:h-12 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
+                  class="w-10 h-10 md:w-12 md:h-12 bg-[#99cc33] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg class="w-5 h-5 md:w-6 md:h-6 text-black" fill="currentColor" viewBox="0 0 20 20"
                     aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -231,28 +221,7 @@ useHead({
                 </div>
                 <div>
                   <h3 class="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">Head Office</h3>
-                  <p class="text-sm md:text-base text-gray-300">19a Agudama off, Wogu Street, D-Line, Port Harcourt,
-                    Nigeria</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Abuja Office Card -->
-            <div
-              class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 md:p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-              <div class="flex items-start space-x-3 md:space-x-4">
-                <div
-                  class="w-10 h-10 md:w-12 md:h-12 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 md:w-6 md:h-6 text-black" fill="currentColor" viewBox="0 0 20 20"
-                    aria-hidden="true">
-                    <path fill-rule="evenodd"
-                      d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="text-lg md:text-xl font-bold text-white mb-1 md:mb-2">Abuja Office</h3>
-                  <p class="text-sm md:text-base text-gray-300">1 Idris Garba Street, Kado FCT Abuja, Nigeria</p>
+                  <p class="text-sm md:text-base text-gray-300">Minna, Niger State, Nigeria</p>
                 </div>
               </div>
             </div>
@@ -263,7 +232,7 @@ useHead({
               <div class="space-y-3 md:space-y-4">
                 <div class="flex items-center space-x-3 md:space-x-4">
                   <div
-                    class="w-8 h-8 md:w-10 md:h-10 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
+                    class="w-8 h-8 md:w-10 md:h-10 bg-[#99cc33] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg class="w-4 h-4 md:w-5 md:h-5 text-black" fill="currentColor" viewBox="0 0 20 20"
                       aria-hidden="true">
                       <path
@@ -272,19 +241,15 @@ useHead({
                     </svg>
                   </div>
                   <div>
-                    <a href="tel:+2349055440633"
-                      class="text-sm md:text-base text-white font-medium hover:text-[#E6A619] transition-colors">+234
-                      (0) 905 544 0633</a>
-                    <br>
-                    <a href="tel:+2347052905863"
-                      class="text-sm md:text-base text-gray-300 hover:text-[#E6A619] transition-colors">+234 705 290
-                      5863</a>
+                    <a href="tel:+2348034272579"
+                      class="text-sm md:text-base text-white font-medium hover:text-[#99cc33] transition-colors">+234
+                      803 427 2579</a>
                   </div>
                 </div>
 
                 <div class="flex items-center space-x-3 md:space-x-4">
                   <div
-                    class="w-8 h-8 md:w-10 md:h-10 bg-[#E6A619] rounded-full flex items-center justify-center flex-shrink-0">
+                    class="w-8 h-8 md:w-10 md:h-10 bg-[#99cc33] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg class="w-4 h-4 md:w-5 md:h-5 text-black" fill="currentColor" viewBox="0 0 20 20"
                       aria-hidden="true">
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
@@ -292,11 +257,26 @@ useHead({
                     </svg>
                   </div>
                   <div>
-                    <a href="mailto:info@xstratoprime.com"
-                      class="text-sm md:text-base text-white font-medium hover:text-[#E6A619] transition-colors">info@xstratoprime.com</a>
+                    <a href="mailto:veraverde.ng@gmail.com"
+                      class="text-sm md:text-base text-white font-medium hover:text-[#99cc33] transition-colors">veraverde.ng@gmail.com</a>
                     <br>
-                    <a href="mailto:xstratoprime@gmail.com"
-                      class="text-sm md:text-base text-gray-300 hover:text-[#E6A619] transition-colors">xstratoprime@gmail.com</a>
+                    <a href="mailto:info@veraverde.com"
+                      class="text-sm md:text-base text-gray-300 hover:text-[#99cc33] transition-colors">info@veraverde.com</a>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-3 md:space-x-4">
+                  <div
+                    class="w-8 h-8 md:w-10 md:h-10 bg-[#99cc33] rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4 md:w-5 md:h-5 text-black" fill="currentColor" viewBox="0 0 24 24">
+                      <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <a href="https://wa.me/2348034272579"
+                      class="text-sm md:text-base text-white font-medium hover:text-[#99cc33] transition-colors">Chat
+                      with us on WhatsApp</a>
                   </div>
                 </div>
               </div>
@@ -316,7 +296,7 @@ useHead({
               SEND US A MESSAGE
             </h2>
             <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Have a project in mind? Let's discuss how we can help you achieve your goals.
+              Have questions about our sustainable solutions? We'd love to hear from you.
             </p>
           </div>
 
@@ -324,9 +304,9 @@ useHead({
           <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl p-8 md:p-12">
             <form @submit.prevent="submitForm" class="space-y-8" novalidate>
               <!-- Web3Forms Configuration -->
-              <input type="hidden" name="access_key" value="1d005cda-aa81-48a8-99fd-d5a6cb3d5c66">
-              <input type="hidden" name="subject" value="New Contact Form Submission - Xstrato Prime">
-              <input type="hidden" name="from_name" value="Xstrato Prime Website">
+              <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+              <input type="hidden" name="subject" value="New Contact Form Submission - Vera Verde">
+              <input type="hidden" name="from_name" value="Vera Verde Website">
               <input type="hidden" name="redirect" value="false">
 
               <!-- Honeypot field for spam protection -->
@@ -341,7 +321,7 @@ useHead({
                   </label>
                   <input type="text" id="name" name="name" v-model="formData.name" required minlength="2"
                     maxlength="100"
-                    class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#E6A619] focus:outline-none dark:text-white transition-colors duration-300"
+                    class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#99cc33] focus:outline-none dark:text-white transition-colors duration-300"
                     placeholder="Enter your full name" autocomplete="name">
                 </div>
 
@@ -351,7 +331,7 @@ useHead({
                     Email Address <span class="text-red-500">*</span>
                   </label>
                   <input type="email" id="email" name="email" v-model="formData.email" required maxlength="150"
-                    class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#E6A619] focus:outline-none dark:text-white transition-colors duration-300"
+                    class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#99cc33] focus:outline-none dark:text-white transition-colors duration-300"
                     placeholder="your.email@example.com" autocomplete="email">
                 </div>
 
@@ -361,7 +341,7 @@ useHead({
                     Phone Number
                   </label>
                   <input type="tel" id="phone" name="phone" v-model="formData.phone" maxlength="20"
-                    class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#E6A619] focus:outline-none dark:text-white transition-colors duration-300"
+                    class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#99cc33] focus:outline-none dark:text-white transition-colors duration-300"
                     placeholder="+234 xxx xxx xxxx" autocomplete="tel">
                 </div>
 
@@ -372,7 +352,7 @@ useHead({
                   </label>
                   <input type="text" id="subject" name="subject" v-model="formData.subject" required minlength="3"
                     maxlength="200"
-                    class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#E6A619] focus:outline-none dark:text-white transition-colors duration-300"
+                    class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#99cc33] focus:outline-none dark:text-white transition-colors duration-300"
                     placeholder="What's this about?">
                 </div>
               </div>
@@ -384,14 +364,14 @@ useHead({
                 </label>
                 <textarea id="message" name="message" v-model="formData.message" rows="6" required minlength="10"
                   maxlength="2000"
-                  class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#E6A619] focus:outline-none dark:text-white transition-colors duration-300 resize-none"
-                  placeholder="Tell us about your project or inquiry..."></textarea>
+                  class="w-full px-0 py-4 text-lg bg-transparent border-0 border-b-2 border-gray-300 dark:border-gray-600 focus:border-[#99cc33] focus:outline-none dark:text-white transition-colors duration-300 resize-none"
+                  placeholder="Tell us about your inquiry or project..."></textarea>
               </div>
 
               <!-- Submit Button -->
               <div class="pt-6">
                 <button type="submit" :disabled="formStatus.loading"
-                  class="group relative w-full md:w-auto px-12 py-4 bg-gradient-to-r from-[#E6A619] to-[#d49916] text-black font-bold text-lg rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100 focus:outline-none focus:ring-4 focus:ring-[#E6A619]/30"
+                  class="group relative w-full md:w-auto px-12 py-4 bg-gradient-to-r from-[#99cc33] to-[#88bb22] text-black font-bold text-lg rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100 focus:outline-none focus:ring-4 focus:ring-[#99cc33]/30"
                   :aria-label="formStatus.loading ? 'Sending message...' : 'Send message'">
                   <span v-if="!formStatus.loading" class="flex items-center justify-center">
                     SEND MESSAGE
@@ -451,40 +431,22 @@ useHead({
       <div class="container mx-auto px-6">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 font-barlow">
-            FIND US HERE
+            OUR LOCATION
           </h2>
-          <p class="text-xl text-gray-600 dark:text-gray-300">Visit our offices for face-to-face consultations</p>
+          <p class="text-xl text-gray-600 dark:text-gray-300">Visit our head office in Minna, Niger State</p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <!-- Head Office -->
-          <div class="space-y-6">
+        <div class="flex justify-center">
+          <div class="w-full max-w-4xl">
             <div
-              class="bg-gradient-to-br from-[#002244] to-[#003366] rounded-3xl p-8 text-white hover:scale-105 transition-transform duration-300">
+              class="bg-gradient-to-br from-green-800 to-green-700 rounded-3xl p-8 text-white hover:scale-105 transition-transform duration-300">
               <h3 class="text-2xl font-bold mb-4 font-barlow">HEAD OFFICE</h3>
-              <p class="text-gray-300 mb-6">19a Agudama off, Wogu Street, D-Line, Port Harcourt, Nigeria</p>
-              <div class="h-64 bg-gray-200/20 rounded-2xl overflow-hidden backdrop-blur-sm">
+              <p class="text-gray-300 mb-6">Minna, Niger State, Nigeria</p>
+              <div class="h-96 bg-gray-200/20 rounded-2xl overflow-hidden backdrop-blur-sm">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.2891234567!2d7.0334567!3d4.8156789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d2b1c8f9a5c7%3A0x12345678901234!2s19a%20Agudama%20off%20Wogu%20Street%2C%20D-Line%2C%20Port%20Harcourt%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1623345678901!5m2!1sen!2sng"
-                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl"
-                  title="Xstrato Prime Head Office Location"></iframe>
-              </div>
-            </div>
-          </div>
-
-          <!-- Abuja Office -->
-          <div class="space-y-6">
-            <div
-              class="bg-gradient-to-br from-[#E6A619] to-[#d49916] rounded-3xl p-8 text-black hover:scale-105 transition-transform duration-300">
-              <h3 class="text-2xl font-bold mb-4 font-barlow">ABUJA OFFICE</h3>
-              <p class="text-gray-800 mb-6">1 Idris Garba Street, Kado FCT Abuja, Nigeria</p>
-              <div class="h-64 bg-black/10 rounded-2xl overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.847202180092!2d7.433682315797442!3d9.05747019354719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745c8b9f8d7b%3A0xa1b2c3d4e5f67890!2s1%20Idris%20Garba%20Street%2C%20Kado%20FCT%20Abuja%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1623345678901!5m2!1sen!2sng"
-                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade" class="rounded-2xl"
-                  title="Xstrato Prime Abuja Office Location"></iframe>
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.847202180092!2d7.433682315797442!3d9.05747019354719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745c8b9f8d7b%3A0xa1b2c3d4e5f67890!2sMinna%2C%20Niger%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1623345678901!5m2!1sen!2sng"
+                  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-2xl"
+                  title="Vera Verde Head Office Location"></iframe>
               </div>
             </div>
           </div>
@@ -493,9 +455,6 @@ useHead({
     </section>
   </div>
 </template>
-
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap');
 
 <style scoped>
 .font-barlow {
@@ -541,12 +500,12 @@ useHead({
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #E6A619;
+  background: #99cc33;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #d49916;
+  background: #88bb22;
 }
 
 /* Dark mode scrollbar */
@@ -555,11 +514,11 @@ useHead({
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: #E6A619;
+  background: #99cc33;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: #d49916;
+  background: #88bb22;
 }
 
 /* Form validation styles */
@@ -577,7 +536,7 @@ textarea:valid:not(:placeholder-shown) {
 input:focus-visible,
 textarea:focus-visible,
 button:focus-visible {
-  outline: 2px solid #E6A619;
+  outline: 2px solid #99cc33;
   outline-offset: 2px;
 }
 
@@ -626,7 +585,7 @@ button:disabled {
 }
 
 button:not(:disabled):hover {
-  box-shadow: 0 20px 40px rgba(230, 166, 25, 0.3);
+  box-shadow: 0 20px 40px rgba(153, 204, 51, 0.3);
 }
 
 /* Enhanced card hover effects */

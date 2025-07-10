@@ -1,175 +1,140 @@
 <template>
-  <section class="xstrato-cta relative py-16 md:py-24 overflow-hidden mb-16 md:mb-24">
-    <!-- Diagonal split background -->
-    <div class="absolute inset-0">
-      <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
+  <!-- CTA Section -->
+  <section class="relative bg-gradient-to-br from-amber-50 to-green-50 py-16 md:py-24 overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5">
       <div
-        class="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-blue-900/30 to-transparent transform skew-y-1 origin-top-right">
+        class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23519e0f%22%20fill-opacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]">
       </div>
     </div>
 
-    <!-- Geometric pattern overlay -->
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-10 left-10 w-32 h-32 border border-white/20 rotate-45"></div>
-      <div class="absolute bottom-20 right-20 w-24 h-24 border border-white/15 rotate-12"></div>
-      <div class="absolute top-1/2 left-1/4 w-16 h-16 border border-white/10 -rotate-12"></div>
+    <!-- Floating Background Elements -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-green-200/10 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-200/10 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="container mx-auto px-6 relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+    <div class="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-        <!-- Left Column - Content -->
-        <div class="space-y-6">
-          <div class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-            <span class="text-white/90 text-sm font-medium tracking-wide">READY TO BEGIN?</span>
-          </div>
+          <!-- Left Column: Content -->
+          <div class="text-center lg:text-left">
+            <!-- Badge -->
+            <div
+              class="inline-flex items-center px-4 py-2 bg-green-200/20 backdrop-blur-sm rounded-full text-green-800 text-sm font-medium mb-6">
+              <Icon name="heroicons:sparkles" class="w-4 h-4 mr-2" />
+              Join the Green Revolution
+            </div>
 
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Turn Your Vision Into
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-              Reality
-            </span>
-          </h2>
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+              Let's Build a Cleaner, More
+              <span class="text-green-700">Resilient Future—Together</span>
+            </h2>
 
-          <p class="text-lg text-white/80 leading-relaxed">
-            Whether it's construction & general contracting, solar energy solutions, engineering & design services, or
-            renovation & infrastructure upgrades,
-            Xstrato delivers results that exceed expectations. Let's collaborate to create something extraordinary.
-          </p>
+            <!-- Description -->
+            <p class="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+              We’re helping farmers grow more, replacing firewood with cleaner fuel, and putting carbon back into the
+              soil where it belongs. Your support—whether as a partner, donor, or advocate—can help us do even more.
+            </p>
 
-          <div class="flex flex-col sm:flex-row gap-4 pt-4">
-            <NuxtLink to="/contact"
-              class="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-br from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              <span>Get Started Today</span>
-              <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
-                </path>
-              </svg>
-            </NuxtLink>
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <NuxtLink to="/contact"
+                class="group inline-flex items-center justify-center px-8 py-4 bg-white text-[#406112] font-semibold rounded-lg shadow-lg hover:bg-green-50 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <Icon name="heroicons:users" class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                Partner With Us
+                <Icon name="heroicons:arrow-right"
+                  class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </NuxtLink>
 
-            <NuxtLink to="/services"
-              class="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300">
-              Our Services
-            </NuxtLink>
-          </div>
-        </div>
+              <NuxtLink to="/services"
+                class="group inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-green-700 text-green-700 font-semibold rounded-lg hover:bg-green-700 hover:text-white transition-all duration-300 hover:scale-105">
+                <Icon name="heroicons:chat-bubble-left-right"
+                  class="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" />
+                Get in Touch
+              </NuxtLink>
+            </div>
 
-        <!-- Right Column - Visual Element -->
-        <div class="relative">
-          <div class="relative p-8">
-            <!-- Main card -->
-            <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 shadow-2xl">
-              <div class="space-y-6">
-                <div class="flex items-center space-x-4">
-                  <div
-                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="text-white font-semibold text-lg">Proven Results</h3>
-                    <p class="text-white/70 text-sm">Successful projects across multiple industries</p>
-                  </div>
+            <!-- Trust Indicators -->
+            <div class="mt-8 pt-8 border-t border-green-200">
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-gray-700">
+                <div class="flex items-center">
+                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-2" />
+                  <span class="text-sm">100% Organic</span>
                 </div>
-
-                <div class="flex items-center space-x-4">
-                  <div
-                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                      </path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="text-white font-semibold text-lg">Expert Team</h3>
-                    <p class="text-white/70 text-sm">Dedicated and experienced professionals in every field</p>
-                  </div>
+                <div class="flex items-center">
+                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-2" />
+                  <span class="text-sm">Proven Results</span>
                 </div>
-
-                <div class="flex items-center space-x-4">
-                  <div
-                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="text-white font-semibold text-lg">Fast Delivery</h3>
-                    <p class="text-white/70 text-sm">Efficient project completion on schedule</p>
-                  </div>
-                </div>
-
-                <div class="flex items-center space-x-4">
-                  <div
-                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="text-white font-semibold text-lg">Quick Response</h3>
-                    <p class="text-white/70 text-sm">We'll get back to you within 24 hours</p>
-                  </div>
+                <div class="flex items-center">
+                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-2" />
+                  <span class="text-sm">Expert Support</span>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Floating accent elements -->
-            <div
-              class="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-full opacity-60">
-            </div>
-            <div
-              class="absolute -bottom-2 -left-2 w-6 h-6 bg-gradient-to-br from-purple-400 to-pink-300 rounded-full opacity-40">
+          <!-- Right Column: Image -->
+          <div class="relative flex justify-center lg:justify-start">
+            <div class="relative group max-w-sm">
+              <!-- Main Image -->
+              <div class="relative">
+                <img src="~/assets/img/veraverde-gardener.png" alt="Vera Verde - Sustainable Agriculture Solutions"
+                  class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" />
+              </div>
+
+              <!-- Floating Elements -->
+              <div
+                class="absolute -top-6 -right-6 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                <Icon name="heroicons:leaf" class="w-6 h-6 text-green-600" />
+              </div>
+
+              <div
+                class="absolute -bottom-6 -left-6 w-16 h-16 bg-green-500/90 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                <Icon name="heroicons:chart-bar-square" class="w-8 h-8 text-white" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Bottom accent line -->
-    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600"></div>
   </section>
 </template>
 
 <script setup>
-// No additional script logic needed
+// No script needed for this component
 </script>
 
 <style scoped>
-.xstrato-cta {
-  position: relative;
-}
-
-/* Additional hover effects */
-.xstrato-cta a:hover {
-  transform: translateY(-2px);
-}
-
-/* Subtle animation for floating elements */
+/* Custom animations */
 @keyframes float {
 
   0%,
   100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px);
   }
 
   50% {
-    transform: translateY(-10px) rotate(5deg);
+    transform: translateY(-10px);
   }
 }
 
-.xstrato-cta .absolute.w-8,
-.xstrato-cta .absolute.w-6 {
-  animation: float 6s ease-in-out infinite;
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
 
-.xstrato-cta .absolute.w-6 {
-  animation-delay: -3s;
+/* Smooth transitions */
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Custom gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #d1fae5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 </style>
