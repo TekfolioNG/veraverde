@@ -27,6 +27,13 @@ const menuitems = [
     path: "/#",
     hasDropdown: true,
     subitems: [
+
+      {
+        title: "Vera Verde Ecofuel",
+        path: "/ecofuel-briquettes",
+        description: "Clean energy solutions from organic waste",
+        image: "/img/ecofuel-briquettes.jpg"
+      },
       {
         title: "Climate-Smart Agriculture",
         path: "/climate-smart-agriculture",
@@ -38,13 +45,8 @@ const menuitems = [
         path: "/carbon-sequestration",
         description: "Capturing carbon to combat climate change",
         image: "/img/carbon-sequestration.jpg"
-      },
-      {
-        title: "Ecofuel Briquettes",
-        path: "/ecofuel-briquettes",
-        description: "Clean energy solutions from organic waste",
-        image: "/img/ecofuel-briquettes.jpg"
       }
+
     ]
   },
   { title: "NEWS & EVENTS", path: "/news-events", hasDropdown: false },
