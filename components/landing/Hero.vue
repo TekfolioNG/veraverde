@@ -72,7 +72,7 @@ const slides = [
     alt: 'Climate-Smart Agriculture',
     title: 'Farming That Nurtures the Earth',
     description: 'We help farmers grow more, waste less, and protect the land they rely on.',
-    buttonLink: '/services',
+    buttonLink: '/climate-smart-agriculture',
     buttonText: 'Here\'s How'
   },
   {
@@ -80,7 +80,7 @@ const slides = [
     alt: 'Carbon Sequestration',
     title: 'Turning Carbon into Soil Health',
     description: 'We lock carbon in the soil using biochar—helping the planet and boosting harvests.',
-    buttonLink: '/services',
+    buttonLink: '/carbon-sequestration',
     buttonText: 'How It Works'
   },
   {
@@ -88,7 +88,7 @@ const slides = [
     alt: 'Ecofuel Briquettes',
     title: 'Clean Energy from Farm Waste',
     description: 'We turn sawdust and rice husk into eco-briquettes—an affordable, smokeless alternative.',
-    buttonLink: '/services',
+    buttonLink: '/ecofuel-briquettes',
     buttonText: 'Our Green Energy Solution'
   }
 ]

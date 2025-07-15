@@ -18,7 +18,54 @@
             <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center lg:justify-items-start">
 
-                <!-- Service 1 - Climate-Smart Agriculture -->
+                <!-- Service 1 - Ecofuel Briquettes -->
+                <div
+                    class="group bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:border-[#406112]/20 relative overflow-hidden w-full max-w-sm lg:max-w-none">
+                    <!-- Background Pattern -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-orange-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+
+                    <!-- Icon -->
+                    <div class="relative mb-6">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-[#406112]/10 to-green-100 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                            <Icon name="heroicons:fire"
+                                class="w-8 h-8 text-[#406112] group-hover:scale-110 transition-transform duration-300" />
+                        </div>
+                        <!-- Pulse Effect -->
+                        <div
+                            class="absolute inset-0 w-16 h-16 bg-[#406112]/20 rounded-2xl opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-300">
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="relative">
+                        <h3
+                            class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#406112] transition-colors duration-300">
+                            Sustainable Ecofuel Briquettes
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            We manufacture high-quality ecofuel briquettes from rice husk, sawdust, and groundnut
+                            husk—providing clean, affordable, and deforestation-free alternatives to charcoal and
+                            firewood.
+                        </p>
+
+                        <!-- Learn More Button -->
+                        <div
+                            class="flex items-center text-[#406112] font-semibold group-hover:text-[#2d420c] transition-colors duration-300">
+                            <NuxtLink to="/ecofuel-briquettes"><span
+                                    class="group-hover:translate-x-2 transition-transform duration-300">Learn
+                                    More</span>
+
+                                <Icon name="heroicons:arrow-right"
+                                    class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
+                            </NuxtLink>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 - Climate-Smart Agriculture -->
                 <div
                     class="group bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:border-[#406112]/20 relative overflow-hidden w-full max-w-sm lg:max-w-none">
                     <!-- Background Pattern -->
@@ -54,14 +101,18 @@
                         <!-- Learn More Button -->
                         <div
                             class="flex items-center text-[#406112] font-semibold group-hover:text-[#2d420c] transition-colors duration-300">
-                            <span class="group-hover:translate-x-2 transition-transform duration-300">Learn More</span>
-                            <Icon name="heroicons:arrow-right"
-                                class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
+                            <NuxtLink to="/climate-smart-agriculture"><span
+                                    class="group-hover:translate-x-2 transition-transform duration-300">Learn
+                                    More</span>
+
+                                <Icon name="heroicons:arrow-right"
+                                    class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 2 - Carbon Sequestration -->
+                <!-- Service 3 - Carbon Sequestration -->
                 <div
                     class="group bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:border-[#406112]/20 relative overflow-hidden w-full max-w-sm lg:max-w-none">
                     <!-- Background Pattern -->
@@ -98,52 +149,13 @@
                         <!-- Learn More Button -->
                         <div
                             class="flex items-center text-[#406112] font-semibold group-hover:text-[#2d420c] transition-colors duration-300">
-                            <span class="group-hover:translate-x-2 transition-transform duration-300">Learn More</span>
-                            <Icon name="heroicons:arrow-right"
-                                class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
-                        </div>
-                    </div>
-                </div>
+                            <NuxtLink to="/carbon-sequestration"><span
+                                    class="group-hover:translate-x-2 transition-transform duration-300">Learn
+                                    More</span>
 
-                <!-- Service 3 - Ecofuel Briquettes -->
-                <div
-                    class="group bg-white rounded-3xl p-8 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:border-[#406112]/20 relative overflow-hidden w-full max-w-sm lg:max-w-none">
-                    <!-- Background Pattern -->
-                    <div
-                        class="absolute inset-0 bg-gradient-to-br from-orange-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    </div>
-
-                    <!-- Icon -->
-                    <div class="relative mb-6">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-[#406112]/10 to-green-100 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
-                            <Icon name="heroicons:fire"
-                                class="w-8 h-8 text-[#406112] group-hover:scale-110 transition-transform duration-300" />
-                        </div>
-                        <!-- Pulse Effect -->
-                        <div
-                            class="absolute inset-0 w-16 h-16 bg-[#406112]/20 rounded-2xl opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-300">
-                        </div>
-                    </div>
-
-                    <!-- Content -->
-                    <div class="relative">
-                        <h3
-                            class="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#406112] transition-colors duration-300">
-                            Sustainable Ecofuel Briquettes
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed mb-6">
-                            We manufacture high-quality ecofuel briquettes from rice husk, sawdust, and groundnut
-                            husk—providing clean, affordable, and deforestation-free alternatives to charcoal and
-                            firewood.
-                        </p>
-
-                        <!-- Learn More Button -->
-                        <div
-                            class="flex items-center text-[#406112] font-semibold group-hover:text-[#2d420c] transition-colors duration-300">
-                            <span class="group-hover:translate-x-2 transition-transform duration-300">Learn More</span>
-                            <Icon name="heroicons:arrow-right"
-                                class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
+                                <Icon name="heroicons:arrow-right"
+                                    class="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>

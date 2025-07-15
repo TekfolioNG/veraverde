@@ -41,7 +41,7 @@
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <NuxtLink to="/contact"
+              <NuxtLink to="/partner"
                 class="group inline-flex items-center justify-center px-8 py-4 bg-white text-[#406112] font-semibold rounded-lg shadow-lg hover:bg-green-50 transition-all duration-300 hover:scale-105 hover:shadow-xl">
                 <Icon name="heroicons:users" class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Partner With Us
@@ -49,7 +49,7 @@
                   class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </NuxtLink>
 
-              <NuxtLink to="/services"
+              <NuxtLink to="/contact"
                 class="group inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-green-700 text-green-700 font-semibold rounded-lg hover:bg-green-700 hover:text-white transition-all duration-300 hover:scale-105">
                 <Icon name="heroicons:chat-bubble-left-right"
                   class="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" />

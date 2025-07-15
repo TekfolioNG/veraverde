@@ -125,7 +125,7 @@
 
           <!-- Learn more button -->
           <div class="pt-4 text-center lg:text-left">
-            <NuxtLink to="/about-us"
+            <NuxtLink to="/about"
               class="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors duration-300 group">
               <span>Learn more about us</span>
               <svg xmlns="http://www.w3.org/2000/svg"
