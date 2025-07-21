@@ -45,16 +45,17 @@
                                 </div>
                                 <h2
                                     class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-                                    SDG Targets
+                                    SDG & AU Agenda 2063 Targets
                                 </h2>
                             </div>
                             <p class="text-lg text-gray-600 leading-relaxed">
-                                Our work directly supports these United Nations Sustainable Development Goals
+                                Our work directly supports these United Nations Sustainable Development Goals and
+                                African Union's Agenda 2063
                             </p>
                         </div>
 
-                        <!-- Updated SDG Grid - 2 columns and 3 rows -->
-                        <div class="grid grid-cols-2 gap-6 max-w-xl mx-auto px-4 md:px-0">
+                        <!-- Updated SDG Grid - 3 columns for better mobile display -->
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl mx-auto px-4 md:px-0">
                             <!-- SDG 1: No Poverty -->
                             <div
                                 class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
@@ -70,7 +71,7 @@
                                             <Icon name="heroicons:hand-raised"
                                                 class="w-5 h-5 text-white flex-shrink-0" />
                                         </div>
-                                        <h4 class="text-white/90 font-medium text-xs whitespace-nowrap"><b>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
                                                 No Poverty
                                             </b></h4>
                                     </div>
@@ -91,8 +92,114 @@
                                             <span class="text-xl font-bold text-white">SDG 2</span>
                                             <Icon name="heroicons:heart" class="w-5 h-5 text-white flex-shrink-0" />
                                         </div>
-                                        <h4 class="text-white/90 font-medium text-xs whitespace-nowrap"><b>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
                                                 Zero Hunger
+                                            </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 3: Good Health -->
+                            <div
+                                class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
+                                <div
+                                    class="relative bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-xl p-3 shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300">
+                                    </div>
+
+                                    <div class="relative">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="text-xl font-bold text-white">SDG 3</span>
+                                            <Icon name="heroicons:heart" class="w-5 h-5 text-white flex-shrink-0" />
+                                        </div>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Good Health
+                                            </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 4: Quality Education -->
+                            <div
+                                class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
+                                <div
+                                    class="relative bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-xl p-3 shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300">
+                                    </div>
+
+                                    <div class="relative">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="text-xl font-bold text-white">SDG 4</span>
+                                            <Icon name="heroicons:academic-cap"
+                                                class="w-5 h-5 text-white flex-shrink-0" />
+                                        </div>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Quality Education
+                                            </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 5: Gender Equality -->
+                            <div
+                                class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
+                                <div
+                                    class="relative bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-xl p-3 shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300">
+                                    </div>
+
+                                    <div class="relative">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="text-xl font-bold text-white">SDG 5</span>
+                                            <Icon name="heroicons:scale" class="w-5 h-5 text-white flex-shrink-0" />
+                                        </div>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Gender Equality
+                                            </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 6: Clean Water -->
+                            <div
+                                class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
+                                <div
+                                    class="relative bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-xl p-3 shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300">
+                                    </div>
+
+                                    <div class="relative">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="text-xl font-bold text-white">SDG 6</span>
+                                            <Icon name="heroicons:droplet" class="w-5 h-5 text-white flex-shrink-0" />
+                                        </div>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Clean Water
+                                            </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 7: Affordable Energy -->
+                            <div
+                                class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
+                                <div
+                                    class="relative bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-xl p-3 shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300">
+                                    </div>
+
+                                    <div class="relative">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="text-xl font-bold text-white">SDG 7</span>
+                                            <Icon name="heroicons:bolt" class="w-5 h-5 text-white flex-shrink-0" />
+                                        </div>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Affordable Energy
                                             </b></h4>
                                     </div>
                                 </div>
@@ -112,8 +219,29 @@
                                             <span class="text-xl font-bold text-white">SDG 8</span>
                                             <Icon name="heroicons:briefcase" class="w-5 h-5 text-white flex-shrink-0" />
                                         </div>
-                                        <h4 class="text-white/90 font-medium text-xs whitespace-nowrap"><b>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
                                                 Decent Work
+                                            </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SDG 9: Industry Innovation -->
+                            <div
+                                class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
+                                <div
+                                    class="relative bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-xl p-3 shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300">
+                                    </div>
+
+                                    <div class="relative">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="text-xl font-bold text-white">SDG 9</span>
+                                            <Icon name="heroicons:cog" class="w-5 h-5 text-white flex-shrink-0" />
+                                        </div>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Industry Innovation
                                             </b></h4>
                                     </div>
                                 </div>
@@ -134,8 +262,8 @@
                                             <Icon name="heroicons:arrow-path"
                                                 class="w-5 h-5 text-white flex-shrink-0" />
                                         </div>
-                                        <h4 class="text-white/90 font-medium text-xs whitespace-nowrap"><b>
-                                                Responsible Use
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Responsible Consumption
                                             </b></h4>
                                     </div>
                                 </div>
@@ -155,7 +283,7 @@
                                             <span class="text-xl font-bold text-white">SDG 13</span>
                                             <Icon name="heroicons:sun" class="w-5 h-5 text-white flex-shrink-0" />
                                         </div>
-                                        <h4 class="text-white/90 font-medium text-xs whitespace-nowrap"><b>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
                                                 Climate Action
                                             </b></h4>
                                     </div>
@@ -177,8 +305,72 @@
                                             <Icon name="heroicons:globe-europe-africa"
                                                 class="w-5 h-5 text-white flex-shrink-0" />
                                         </div>
-                                        <h4 class="text-white/90 font-medium text-xs whitespace-nowrap"><b>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
                                                 Life on Land
+                                            </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AU Agenda 2063 Goal 3 -->
+                            <div
+                                class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
+                                <div
+                                    class="relative bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-xl p-3 shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300">
+                                    </div>
+
+                                    <div class="relative">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="text-xl font-bold text-white">AU 3</span>
+                                            <Icon name="heroicons:heart" class="w-5 h-5 text-white flex-shrink-0" />
+                                        </div>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Health & Well-being
+                                            </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AU Agenda 2063 Goal 4 -->
+                            <div
+                                class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
+                                <div
+                                    class="relative bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-xl p-3 shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300">
+                                    </div>
+
+                                    <div class="relative">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="text-xl font-bold text-white">AU 4</span>
+                                            <Icon name="heroicons:academic-cap"
+                                                class="w-5 h-5 text-white flex-shrink-0" />
+                                        </div>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Education & Skills
+                                            </b></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AU Agenda 2063 Goal 5 -->
+                            <div
+                                class="group cursor-pointer transition-all duration-300 hover:-translate-y-2 w-full mx-auto">
+                                <div
+                                    class="relative bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-xl p-3 shadow-lg group-hover:shadow-2xl transition-all duration-300 h-full">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-800 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300">
+                                    </div>
+
+                                    <div class="relative">
+                                        <div class="flex items-center space-x-2 mb-2">
+                                            <span class="text-xl font-bold text-white">AU 5</span>
+                                            <Icon name="heroicons:scale" class="w-5 h-5 text-white flex-shrink-0" />
+                                        </div>
+                                        <h4 class="text-white/90 font-medium text-xs"><b>
+                                                Gender Equality
                                             </b></h4>
                                     </div>
                                 </div>
@@ -212,7 +404,7 @@
                     <!-- Enhanced Stats Grid with Better Icons -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center sm:justify-items-start">
 
-                        <!-- Stat 1 - Grains Produced & Traded -->
+                        <!-- Stat 1 - Briquettes Sold -->
                         <div
                             class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
                             <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
@@ -226,130 +418,38 @@
                                     </div>
                                 </div>
                                 <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
-                                    ref="stat1">0</div>
+                                    ref="stat1">30</div>
                             </div>
                             <div class="space-y-2">
-                                <h3 class="text-base font-semibold text-gray-900">Grains Produced & Traded</h3>
-                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Boosting food production through
-                                    climate-smart methods</p>
+                                <h3 class="text-base font-semibold text-gray-900">Tons of Briquettes Sold</h3>
+                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Clean cooking fuel alternative</p>
                             </div>
                         </div>
 
-                        <!-- Stat 2 - Farmers Onboarded -->
+                        <!-- Stat 2 - Trees Prevented -->
                         <div
                             class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
                             <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
                                 <div class="flex-shrink-0 relative">
                                     <div
                                         class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                        <Icon name="heroicons:user-group" class="w-7 h-7 text-primary" />
+                                        <Icon name="heroicons:globe-europe-africa" class="w-7 h-7 text-primary" />
                                     </div>
                                     <div
                                         class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
                                     </div>
                                 </div>
                                 <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
-                                    ref="stat2">0</div>
+                                    ref="stat2">1,200</div>
                             </div>
                             <div class="space-y-2">
-                                <h3 class="text-base font-semibold text-gray-900">Farmers Onboarded</h3>
-                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Empowering smallholder farmers
-                                    with sustainable practices</p>
+                                <h3 class="text-base font-semibold text-gray-900">Trees Prevented Annually</h3>
+                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Forest conservation through
+                                    sustainable alternatives</p>
                             </div>
                         </div>
 
-                        <!-- Stat 3 - Communities Reached -->
-                        <div
-                            class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
-                            <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
-                                <div class="flex-shrink-0 relative">
-                                    <div
-                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                        <Icon name="heroicons:building-office-2" class="w-7 h-7 text-primary" />
-                                    </div>
-                                    <div
-                                        class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
-                                    </div>
-                                </div>
-                                <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
-                                    ref="stat3">0</div>
-                            </div>
-                            <div class="space-y-2">
-                                <h3 class="text-base font-semibold text-gray-900">Communities Reached</h3>
-                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Driving transformation across
-                                    rural areas</p>
-                            </div>
-                        </div>
-
-                        <!-- Stat 4 - Hectares Cultivated -->
-                        <div
-                            class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
-                            <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
-                                <div class="flex-shrink-0 relative">
-                                    <div
-                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                        <Icon name="heroicons:map" class="w-7 h-7 text-primary" />
-                                    </div>
-                                    <div
-                                        class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
-                                    </div>
-                                </div>
-                                <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
-                                    ref="stat4">0</div>
-                            </div>
-                            <div class="space-y-2">
-                                <h3 class="text-base font-semibold text-gray-900">Hectares Cultivated</h3>
-                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Improved soil fertility at scale
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Stat 5 - Jobs Created -->
-                        <div
-                            class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
-                            <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
-                                <div class="flex-shrink-0 relative">
-                                    <div
-                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                        <Icon name="heroicons:briefcase" class="w-7 h-7 text-primary" />
-                                    </div>
-                                    <div
-                                        class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
-                                    </div>
-                                </div>
-                                <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
-                                    ref="stat5">0</div>
-                            </div>
-                            <div class="space-y-2">
-                                <h3 class="text-base font-semibold text-gray-900">Jobs Created</h3>
-                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Dignified employment across value
-                                    chains</p>
-                            </div>
-                        </div>
-
-                        <!-- Stat 6 - Storage Acquired -->
-                        <div
-                            class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
-                            <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
-                                <div class="flex-shrink-0 relative">
-                                    <div
-                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                        <Icon name="heroicons:server-stack" class="w-7 h-7 text-primary" />
-                                    </div>
-                                    <div
-                                        class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
-                                    </div>
-                                </div>
-                                <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
-                                    ref="stat6">0</div>
-                            </div>
-                            <div class="space-y-2">
-                                <h3 class="text-base font-semibold text-gray-900">Storage Acquired (MT)</h3>
-                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Sustainable storage capacity</p>
-                            </div>
-                        </div>
-
-                        <!-- Stat 7 - CO₂ Prevented Monthly -->
+                        <!-- Stat 3 - CO₂ Prevented -->
                         <div
                             class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
                             <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
@@ -363,36 +463,148 @@
                                     </div>
                                 </div>
                                 <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
-                                    ref="stat7">1,810</div>
+                                    ref="stat3">49</div>
                             </div>
                             <div class="space-y-2">
-                                <h3 class="text-base font-semibold text-gray-900">Tons of CO₂ Prevented Monthly</h3>
-                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Through sustainable practices and
-                                    carbon reduction</p>
+                                <h3 class="text-base font-semibold text-gray-900">Tons of CO₂ Prevented Annually</h3>
+                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Through sustainable practices</p>
                             </div>
                         </div>
 
-                        <!-- Stat 8 - Trees Saved Monthly -->
+                        <!-- Stat 4 - Jobs Created -->
                         <div
                             class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
                             <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
                                 <div class="flex-shrink-0 relative">
-                                    <div class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl
-                                        flex items-center justify-center group-hover:scale-110 transition-transform
-                                        duration-300">
-                                        <Icon name="heroicons:globe-europe-africa" class="w-7 h-7 text-primary" />
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <Icon name="heroicons:briefcase" class="w-7 h-7 text-primary" />
                                     </div>
                                     <div
                                         class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
                                     </div>
                                 </div>
                                 <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
-                                    ref="stat8">3,333</div>
+                                    ref="stat4">50+</div>
                             </div>
                             <div class="space-y-2">
-                                <h3 class="text-base font-semibold text-gray-900">Trees Saved Monthly</h3>
-                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Forest conservation through
-                                    sustainable alternatives</p>
+                                <h3 class="text-base font-semibold text-gray-900">Jobs Created</h3>
+                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Dignified employment across value
+                                    chains</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat 5 - Grains Produced & Traded -->
+                        <div
+                            class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
+                            <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
+                                <div class="flex-shrink-0 relative">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <Icon name="heroicons:archive-box" class="w-7 h-7 text-primary" />
+                                    </div>
+                                    <div
+                                        class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
+                                    </div>
+                                </div>
+                                <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
+                                    ref="stat5">0</div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-base font-semibold text-gray-900">Grains Produced & Traded</h3>
+                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Boosting food production through
+                                    climate-smart methods</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat 6 - Farmers Onboarded -->
+                        <div
+                            class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
+                            <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
+                                <div class="flex-shrink-0 relative">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <Icon name="heroicons:user-group" class="w-7 h-7 text-primary" />
+                                    </div>
+                                    <div
+                                        class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
+                                    </div>
+                                </div>
+                                <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
+                                    ref="stat6">0</div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-base font-semibold text-gray-900">Farmers Onboarded</h3>
+                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Empowering smallholder farmers
+                                    with sustainable practices</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat 7 - Communities Reached -->
+                        <div
+                            class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
+                            <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
+                                <div class="flex-shrink-0 relative">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <Icon name="heroicons:building-office-2" class="w-7 h-7 text-primary" />
+                                    </div>
+                                    <div
+                                        class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
+                                    </div>
+                                </div>
+                                <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
+                                    ref="stat7">0</div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-base font-semibold text-gray-900">Communities Reached</h3>
+                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Driving transformation across
+                                    rural areas</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat 8 - Hectares Cultivated -->
+                        <div
+                            class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
+                            <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
+                                <div class="flex-shrink-0 relative">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <Icon name="heroicons:map" class="w-7 h-7 text-primary" />
+                                    </div>
+                                    <div
+                                        class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
+                                    </div>
+                                </div>
+                                <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
+                                    ref="stat8">0</div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-base font-semibold text-gray-900">Hectares Cultivated</h3>
+                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Improved soil fertility at scale
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Stat 9 - Storage Acquired -->
+                        <div
+                            class="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/20 w-full max-w-sm sm:max-w-none text-center sm:text-left">
+                            <div class="flex items-center justify-center sm:justify-start space-x-4 mb-2">
+                                <div class="flex-shrink-0 relative">
+                                    <div
+                                        class="w-14 h-14 bg-gradient-to-br from-[#c8e6a0] to-[#d4f0b0] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                        <Icon name="heroicons:server-stack" class="w-7 h-7 text-primary" />
+                                    </div>
+                                    <div
+                                        class="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-[#2d420c] to-[#406112] rounded-full animate-pulse">
+                                    </div>
+                                </div>
+                                <div class="text-3xl md:text-3xl font-bold bg-gradient-to-br from-[#2d420c] to-[#406112] bg-clip-text text-transparent"
+                                    ref="stat9">0</div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-base font-semibold text-gray-900">Storage Acquired (MT)</h3>
+                                <p class="text-sm text-gray-900 leading-relaxed mb-0">Sustainable storage capacity</p>
                             </div>
                         </div>
 
@@ -417,17 +629,19 @@ const stat5 = ref(null)
 const stat6 = ref(null)
 const stat7 = ref(null)
 const stat8 = ref(null)
+const stat9 = ref(null)
 
-// Stats data
+// Stats data - verified stats have actual numbers, others are 0
 const stats = [
-    { ref: stat1, value: 1700000, suffix: '' },
-    { ref: stat2, value: 850000, suffix: '' },
-    { ref: stat3, value: 25, suffix: '+' },
-    { ref: stat4, value: 420000, suffix: '+' },
-    { ref: stat5, value: 1000, suffix: '+' },
-    { ref: stat6, value: 225000, suffix: '' },
-    { ref: stat7, value: 10000, suffix: '+' },
-    { ref: stat8, value: 20, suffix: '' }
+    { ref: stat1, value: 30, suffix: '' },       // Briquettes sold
+    { ref: stat2, value: 1200, suffix: '' },    // Trees prevented
+    { ref: stat3, value: 49, suffix: '' },      // CO₂ prevented
+    { ref: stat4, value: 50, suffix: '+' },     // Jobs created
+    { ref: stat5, value: 0, suffix: '' },       // Grains produced
+    { ref: stat6, value: 0, suffix: '' },       // Farmers onboarded
+    { ref: stat7, value: 0, suffix: '' },       // Communities reached
+    { ref: stat8, value: 0, suffix: '' },       // Hectares cultivated
+    { ref: stat9, value: 0, suffix: '' }        // Storage acquired
 ]
 
 // Enhanced format number with better formatting
