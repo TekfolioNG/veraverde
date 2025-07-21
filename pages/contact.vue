@@ -260,8 +260,8 @@ useHead({
                     <a href="mailto:veraverde.ng@gmail.com"
                       class="text-sm md:text-base text-white font-medium hover:text-[#99cc33] transition-colors">veraverde.ng@gmail.com</a>
                     <br>
-                    <a href="mailto:info@veraverde.com"
-                      class="text-sm md:text-base text-gray-300 hover:text-[#99cc33] transition-colors">info@veraverde.com</a>
+                    <a href="mailto:info@veraverde.org"
+                      class="text-sm md:text-base text-gray-300 hover:text-[#99cc33] transition-colors">info@veraverde.org</a>
                   </div>
                 </div>
 

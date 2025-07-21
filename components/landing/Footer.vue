@@ -113,8 +113,8 @@
                   veraverde.ng@gmail.com
                 </a>
                 <br>
-                <a href="mailto:info@veraverde.com" class="hover:text-[#a0d468] transition-colors">
-                  info@veraverde.com
+                <a href="mailto:info@veraverde.org" class="hover:text-[#a0d468] transition-colors">
+                  info@veraverde.org
                 </a>
               </div>
             </li>

@@ -77,7 +77,7 @@
                                         <span class="font-semibold">Email us at:</span>
                                         <br class="sm:hidden">
                                         <a href="mailto:veraverde.ng@gmail.com"
-                                            class="text-[#2e7d32] hover:underline ml-0 sm:ml-1">info@veraverde.com</a>
+                                            class="text-[#2e7d32] hover:underline ml-0 sm:ml-1">info@veraverde.org</a>
                                         or
                                         <a href="mailto:veraverde.ng@gmail.com"
                                             class="text-[#2e7d32] hover:underline ml-1">veraverde.ng@gmail.com</a>
