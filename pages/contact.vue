@@ -145,29 +145,25 @@ definePageMeta({
   layout: "landing"
 })
 
-// SEO head configuration
 useHead({
-  title: 'Contact Us - Vera Verde Limited',
+  title: 'Vera Verde | Contact Us',
   meta: [
-    { name: 'description', content: 'Contact Vera Verde Limited for sustainable agriculture and clean energy solutions. Reach us at our Minna head office in Niger State, Nigeria.' },
-    { name: 'keywords', content: 'contact vera verde, sustainable agriculture, clean energy nigeria, minna office, ecofuel solutions' },
-    { property: 'og:title', content: 'Contact Us - Vera Verde Limited | Sustainable Solutions' },
-    { property: 'og:description', content: 'Get in touch with Vera Verde Limited for climate-smart agricultural solutions and sustainable ecofuel technologies.' },
-    { property: 'og:image', content: 'https://veraverde.com/contact-og-image.jpg' },
+    { property: 'og:title', content: 'VeraVerde | Eco-Smart Agriculture & Clean Energy Solutions' },
+    { property: 'og:description', content: 'Driving climate-smart farming and sustainable biofuels across Africa. VeraVerde connects innovation with impact in agriculture and renewable energy.' },
+    { property: 'og:image', content: '/veraverde-og.jpg' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
-    { property: 'og:image:alt', content: 'Contact Vera Verde Limited' },
-    { property: 'og:type', content: 'website' },
+    { property: 'og:image:alt', content: 'VeraVerde - Climate-Smart Agriculture & Clean Energy' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Contact Us - Vera Verde Limited' },
-    { name: 'twitter:description', content: 'Get in touch with Vera Verde Limited for sustainable agricultural solutions.' },
-    { name: 'twitter:image', content: 'https://veraverde.com/contact-og-image.jpg' },
-    { name: 'robots', content: 'index, follow' }
+    { name: 'twitter:title', content: 'VeraVerde | Eco-Smart Agriculture & Clean Energy Solutions' },
+    { name: 'twitter:description', content: 'Driving climate-smart farming and sustainable biofuels across Africa.' },
+    { name: 'twitter:image', content: '/veraverde-og.jpg' }
   ],
   link: [
     { rel: 'canonical', href: 'https://veraverde.com/contact' }
-  ]
-})
+  ],
+});
+
 </script>
 
 <template>

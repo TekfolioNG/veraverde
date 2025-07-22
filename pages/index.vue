@@ -4,6 +4,7 @@ definePageMeta({
 });
 
 useHead({
+  title: 'Vera Verde | Ignite a sustainable future',
   meta: [
     { property: 'og:title', content: 'VeraVerde | Eco-Smart Agriculture & Clean Energy Solutions' },
     { property: 'og:description', content: 'Driving climate-smart farming and sustainable biofuels across Africa. VeraVerde connects innovation with impact in agriculture and renewable energy.' },

@@ -227,9 +227,18 @@ definePageMeta({
 });
 
 useHead({
-    title: 'Partner With Us - Drive Real Climate Impact Together | Vera Verde Limited',
+    title: 'Vera Verde | Partner with Us',
     meta: [
-        { name: 'description', content: 'Partner with Vera Verde to scale sustainable agriculture, clean energy, and carbon removal across Africa. We welcome NGOs, investors, researchers, and government agencies.' }
+        { property: 'og:title', content: 'VeraVerde | Eco-Smart Agriculture & Clean Energy Solutions' },
+        { property: 'og:description', content: 'Driving climate-smart farming and sustainable biofuels across Africa. VeraVerde connects innovation with impact in agriculture and renewable energy.' },
+        { property: 'og:image', content: '/veraverde-og.jpg' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'VeraVerde - Climate-Smart Agriculture & Clean Energy' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'VeraVerde | Eco-Smart Agriculture & Clean Energy Solutions' },
+        { name: 'twitter:description', content: 'Driving climate-smart farming and sustainable biofuels across Africa.' },
+        { name: 'twitter:image', content: '/veraverde-og.jpg' }
     ]
 });
 </script>
