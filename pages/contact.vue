@@ -49,10 +49,9 @@ const validateForm = () => {
   return errors
 }
 
-// Submit form function - CORS-FIXED VERSION
+// Submit form function - PROXY VERSION
 const submitForm = async (event) => {
   event.preventDefault()
-  const form = event.target
 
   // Client-side validation
   const validationErrors = validateForm()
@@ -79,47 +78,28 @@ const submitForm = async (event) => {
   }
 
   try {
-    console.log('Attempting to submit form...') // Debug log
+    console.log('Submitting form via API proxy...') // Debug log
 
-    // Create form data object for JSON submission
-    const formDataToSend = {
-      access_key: "29c3e72f-88ed-43c6-a882-847719babcc2",
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone || '',
-      subject: formData.subject,
-      message: formData.message,
-      from_name: "Vera Verde Website",
-      redirect: false
-    }
-
-    console.log('Sending data:', formDataToSend) // Debug log
-
-    // Use JSON instead of FormData to avoid CORS issues
-    const response = await fetch('https://api.web3forms.com/submit', {
+    // Use Nuxt's $fetch to call our API route
+    const result = await $fetch('/api/contact', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(formDataToSend)
+      body: {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message
+      }
     })
 
-    console.log('Response status:', response.status) // Debug log
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`)
-    }
-
-    const result = await response.json()
-    console.log('Response data:', result) // Debug log
+    console.log('API response:', result) // Debug log
 
     if (result.success) {
       formStatus.value = {
         loading: false,
         success: true,
         error: false,
-        message: 'Message sent successfully! We will contact you soon.'
+        message: result.message || 'Message sent successfully! We will contact you soon.'
       }
       resetForm()
 
@@ -135,20 +115,19 @@ const submitForm = async (event) => {
 
     let errorMessage = 'An unexpected error occurred. Please try again.'
 
-    // Handle CORS and network errors
-    if (error.message.includes('Failed to fetch') || error.message.includes('CORS')) {
-      errorMessage = 'Unable to send message due to network restrictions. Please try using the email or phone contact methods above.'
-    } else if (error.name === 'TypeError') {
-      errorMessage = 'Network connection error. Please check your internet and try again.'
-    } else if (error.message.includes('HTTP error')) {
-      const status = error.message.match(/\d+/)?.[0]
-      if (status === '400') {
-        errorMessage = 'Invalid form data. Please check your information and try again.'
-      } else if (status === '429') {
-        errorMessage = 'Too many requests. Please wait a moment and try again.'
-      } else if (status?.startsWith('5')) {
-        errorMessage = 'Server temporarily unavailable. Please try again in a few minutes.'
-      }
+    // Handle different error types
+    if (error.statusCode === 400) {
+      errorMessage = error.statusMessage || 'Please check your form data and try again.'
+    } else if (error.statusCode === 408) {
+      errorMessage = 'Request timed out. Please try again.'
+    } else if (error.statusCode === 429) {
+      errorMessage = 'Too many requests. Please wait a moment and try again.'
+    } else if (error.statusCode >= 500) {
+      errorMessage = 'Server error occurred. Please try again in a few minutes.'
+    } else if (error.data?.message) {
+      errorMessage = error.data.message
+    } else if (error.message) {
+      errorMessage = error.message
     }
 
     formStatus.value = {
