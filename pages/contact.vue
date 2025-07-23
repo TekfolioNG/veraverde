@@ -300,7 +300,7 @@ useHead({
           <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl p-8 md:p-12">
             <form @submit.prevent="submitForm" class="space-y-8" novalidate>
               <!-- Web3Forms Configuration -->
-              <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+              <input type="hidden" name="access_key" value="29c3e72f-88ed-43c6-a882-847719babcc2">
               <input type="hidden" name="subject" value="New Contact Form Submission - Vera Verde">
               <input type="hidden" name="from_name" value="Vera Verde Website">
               <input type="hidden" name="redirect" value="false">
