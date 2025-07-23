@@ -1,7 +1,17 @@
-// File: server/api/contact.js (rename from contact.post.js to contact.js)
-// This creates a single endpoint that handles all HTTP methods
+// File: server/api/contact.post.js (Cloudflare requires .post.js extension)
+// For Cloudflare Pages deployment, the file MUST be named contact.post.js
 
 export default defineEventHandler(async (event) => {
+  // Set CORS headers for Cloudflare
+  setHeader(event, "Access-Control-Allow-Origin", "*");
+  setHeader(event, "Access-Control-Allow-Methods", "POST, OPTIONS");
+  setHeader(event, "Access-Control-Allow-Headers", "Content-Type");
+
+  // Handle preflight OPTIONS request
+  if (getMethod(event) === "OPTIONS") {
+    return "";
+  }
+
   // Only allow POST requests
   if (getMethod(event) !== "POST") {
     throw createError({
@@ -57,6 +67,7 @@ export default defineEventHandler(async (event) => {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        "User-Agent": "VeraVerde-Website/1.0",
       },
       body: JSON.stringify(formData),
     });
@@ -67,6 +78,9 @@ export default defineEventHandler(async (event) => {
         response.status,
         response.statusText
       );
+      const errorText = await response.text();
+      console.log("Web3Forms error details:", errorText);
+
       throw createError({
         statusCode: response.status,
         statusMessage: `Web3Forms API error: ${response.statusText}`,
