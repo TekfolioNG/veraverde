@@ -49,8 +49,9 @@ const validateForm = () => {
   return errors
 }
 
-// Submit form function
+// Submit form function - DEBUGGED VERSION
 const submitForm = async (event) => {
+  event.preventDefault()
   const form = event.target
 
   // Client-side validation
@@ -69,7 +70,15 @@ const submitForm = async (event) => {
     return
   }
 
-  const data = new FormData(form)
+  // Create FormData from the form
+  const formDataToSend = new FormData(form)
+
+  // Add the reactive form data to FormData (backup method)
+  formDataToSend.set('name', formData.name)
+  formDataToSend.set('email', formData.email)
+  formDataToSend.set('phone', formData.phone || '')
+  formDataToSend.set('subject', formData.subject)
+  formDataToSend.set('message', formData.message)
 
   // Reset status
   formStatus.value = {
@@ -80,16 +89,25 @@ const submitForm = async (event) => {
   }
 
   try {
-    const result = await $fetch('https://api.web3forms.com/submit', {
+    console.log('Attempting to submit form...') // Debug log
+
+    // Use fetch instead of $fetch for better compatibility
+    const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      body: data,
+      body: formDataToSend,
       headers: {
         'Accept': 'application/json'
-      },
-      timeout: 30000,
-      retry: 2,
-      retryDelay: 1000
+      }
     })
+
+    console.log('Response status:', response.status) // Debug log
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
+    }
+
+    const result = await response.json()
+    console.log('Response data:', result) // Debug log
 
     if (result.success) {
       formStatus.value = {
@@ -108,20 +126,27 @@ const submitForm = async (event) => {
       throw new Error(result.message || 'Failed to send message')
     }
   } catch (error) {
-    console.error('Form submission error:', error)
+    console.error('Form submission error:', error) // Debug log
 
     let errorMessage = 'An unexpected error occurred. Please try again.'
 
-    if (error.name === 'TimeoutError') {
-      errorMessage = 'Request timed out. Please check your internet connection and try again.'
-    } else if (error.statusCode >= 400 && error.statusCode < 500) {
-      errorMessage = 'Invalid request. Please check your information and try again.'
-    } else if (error.statusCode >= 500) {
-      errorMessage = 'Server error occurred. Please try again later.'
-    } else if (error.message.includes('network') || error.message.includes('fetch')) {
+    // More specific error handling
+    if (error.name === 'TypeError' && error.message.includes('fetch')) {
       errorMessage = 'Network error. Please check your internet connection and try again.'
-    } else if (error.data?.message) {
-      errorMessage = error.data.message
+    } else if (error.message.includes('Failed to fetch')) {
+      errorMessage = 'Unable to connect to the server. Please check your internet connection.'
+    } else if (error.message.includes('NetworkError')) {
+      errorMessage = 'Network error occurred. Please try again.'
+    } else if (error.message.includes('CORS')) {
+      errorMessage = 'Cross-origin request blocked. Please try again or contact support.'
+    } else if (error.response) {
+      // Handle response errors
+      const status = error.response.status
+      if (status >= 400 && status < 500) {
+        errorMessage = 'Invalid request. Please check your information and try again.'
+      } else if (status >= 500) {
+        errorMessage = 'Server error occurred. Please try again later.'
+      }
     } else if (error.message) {
       errorMessage = error.message
     }
@@ -298,7 +323,7 @@ useHead({
 
           <!-- Contact Form -->
           <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl p-8 md:p-12">
-            <form @submit.prevent="submitForm" class="space-y-8" novalidate>
+            <form @submit="submitForm" class="space-y-8" novalidate>
               <!-- Web3Forms Configuration -->
               <input type="hidden" name="access_key" value="29c3e72f-88ed-43c6-a882-847719babcc2">
               <input type="hidden" name="subject" value="New Contact Form Submission - Vera Verde">
