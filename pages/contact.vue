@@ -49,7 +49,7 @@ const validateForm = () => {
   return errors
 }
 
-// Submit form function - DEBUGGED VERSION
+// Submit form function - CORS-FIXED VERSION
 const submitForm = async (event) => {
   event.preventDefault()
   const form = event.target
@@ -70,16 +70,6 @@ const submitForm = async (event) => {
     return
   }
 
-  // Create FormData from the form
-  const formDataToSend = new FormData(form)
-
-  // Add the reactive form data to FormData (backup method)
-  formDataToSend.set('name', formData.name)
-  formDataToSend.set('email', formData.email)
-  formDataToSend.set('phone', formData.phone || '')
-  formDataToSend.set('subject', formData.subject)
-  formDataToSend.set('message', formData.message)
-
   // Reset status
   formStatus.value = {
     loading: true,
@@ -91,13 +81,28 @@ const submitForm = async (event) => {
   try {
     console.log('Attempting to submit form...') // Debug log
 
-    // Use fetch instead of $fetch for better compatibility
+    // Create form data object for JSON submission
+    const formDataToSend = {
+      access_key: "29c3e72f-88ed-43c6-a882-847719babcc2",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone || '',
+      subject: formData.subject,
+      message: formData.message,
+      from_name: "Vera Verde Website",
+      redirect: false
+    }
+
+    console.log('Sending data:', formDataToSend) // Debug log
+
+    // Use JSON instead of FormData to avoid CORS issues
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      body: formDataToSend,
       headers: {
+        'Content-Type': 'application/json',
         'Accept': 'application/json'
-      }
+      },
+      body: JSON.stringify(formDataToSend)
     })
 
     console.log('Response status:', response.status) // Debug log
@@ -130,25 +135,20 @@ const submitForm = async (event) => {
 
     let errorMessage = 'An unexpected error occurred. Please try again.'
 
-    // More specific error handling
-    if (error.name === 'TypeError' && error.message.includes('fetch')) {
-      errorMessage = 'Network error. Please check your internet connection and try again.'
-    } else if (error.message.includes('Failed to fetch')) {
-      errorMessage = 'Unable to connect to the server. Please check your internet connection.'
-    } else if (error.message.includes('NetworkError')) {
-      errorMessage = 'Network error occurred. Please try again.'
-    } else if (error.message.includes('CORS')) {
-      errorMessage = 'Cross-origin request blocked. Please try again or contact support.'
-    } else if (error.response) {
-      // Handle response errors
-      const status = error.response.status
-      if (status >= 400 && status < 500) {
-        errorMessage = 'Invalid request. Please check your information and try again.'
-      } else if (status >= 500) {
-        errorMessage = 'Server error occurred. Please try again later.'
+    // Handle CORS and network errors
+    if (error.message.includes('Failed to fetch') || error.message.includes('CORS')) {
+      errorMessage = 'Unable to send message due to network restrictions. Please try using the email or phone contact methods above.'
+    } else if (error.name === 'TypeError') {
+      errorMessage = 'Network connection error. Please check your internet and try again.'
+    } else if (error.message.includes('HTTP error')) {
+      const status = error.message.match(/\d+/)?.[0]
+      if (status === '400') {
+        errorMessage = 'Invalid form data. Please check your information and try again.'
+      } else if (status === '429') {
+        errorMessage = 'Too many requests. Please wait a moment and try again.'
+      } else if (status?.startsWith('5')) {
+        errorMessage = 'Server temporarily unavailable. Please try again in a few minutes.'
       }
-    } else if (error.message) {
-      errorMessage = error.message
     }
 
     formStatus.value = {
@@ -324,13 +324,9 @@ useHead({
           <!-- Contact Form -->
           <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl p-8 md:p-12">
             <form @submit="submitForm" class="space-y-8" novalidate>
-              <!-- Web3Forms Configuration -->
-              <input type="hidden" name="access_key" value="29c3e72f-88ed-43c6-a882-847719babcc2">
-              <input type="hidden" name="subject" value="New Contact Form Submission - Vera Verde">
-              <input type="hidden" name="from_name" value="Vera Verde Website">
-              <input type="hidden" name="redirect" value="false">
+              <!-- Remove all hidden inputs since we're using JSON now -->
 
-              <!-- Honeypot field for spam protection -->
+              <!-- Honeypot field for spam protection (keep this one) -->
               <input type="checkbox" name="botcheck" style="display: none;">
 
               <!-- Form Grid -->
