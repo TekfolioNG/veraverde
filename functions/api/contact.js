@@ -1,6 +1,7 @@
 // functions/api/contact.js
+// This file should be located at: functions/api/contact.js
+
 export async function onRequestPost(context) {
-  // Set up CORS headers first
   const corsHeaders = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -11,7 +12,7 @@ export async function onRequestPost(context) {
   try {
     const { request, env } = context;
 
-    // Get the access key early and fail fast if missing
+    // Get access key
     const accessKey = env?.WEB3FORMS_ACCESS_KEY;
     if (!accessKey) {
       return new Response(
@@ -23,7 +24,7 @@ export async function onRequestPost(context) {
       );
     }
 
-    // Parse request body with timeout protection
+    // Parse request body
     let body;
     try {
       const text = await request.text();
@@ -49,7 +50,7 @@ export async function onRequestPost(context) {
       );
     }
 
-    // Prepare form data for Web3Forms
+    // Prepare form data
     const formData = {
       access_key: accessKey,
       name: String(body.name).trim(),
@@ -61,7 +62,7 @@ export async function onRequestPost(context) {
       redirect: false,
     };
 
-    // Submit to Web3Forms with shorter timeout
+    // Submit to Web3Forms
     const web3Response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -71,7 +72,6 @@ export async function onRequestPost(context) {
       body: JSON.stringify(formData),
     });
 
-    // Parse response
     const result = await web3Response.json();
 
     return new Response(JSON.stringify(result), {
@@ -79,7 +79,6 @@ export async function onRequestPost(context) {
       headers: corsHeaders,
     });
   } catch (error) {
-    // Always return a response, never let the function crash
     return new Response(
       JSON.stringify({
         success: false,
@@ -90,7 +89,6 @@ export async function onRequestPost(context) {
   }
 }
 
-// Handle CORS preflight
 export async function onRequestOptions() {
   return new Response(null, {
     status: 200,
