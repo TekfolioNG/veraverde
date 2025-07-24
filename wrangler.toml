@@ -5,8 +5,6 @@ pages_build_output_dir = ".output/public"
 [build]
 command = "pnpm run build"
 
-[[build.environment_variables]]
-NODE_VERSION = "18.17.0"
-
 [build.environment_variables]
+NODE_VERSION = "18.17.0"
 NITRO_PRESET = "cloudflare-pages"
