@@ -1,24 +1,11 @@
-// File: server/api/contact.post.js (Cloudflare requires .post.js extension)
-// For Cloudflare Pages deployment, the file MUST be named contact.post.js
+// File: server/api/contact.post.js
+// The .post.js extension ensures only POST requests are accepted
 
 export default defineEventHandler(async (event) => {
   // Set CORS headers for Cloudflare
   setHeader(event, "Access-Control-Allow-Origin", "*");
   setHeader(event, "Access-Control-Allow-Methods", "POST, OPTIONS");
   setHeader(event, "Access-Control-Allow-Headers", "Content-Type");
-
-  // Handle preflight OPTIONS request
-  if (getMethod(event) === "OPTIONS") {
-    return "";
-  }
-
-  // Only allow POST requests
-  if (getMethod(event) !== "POST") {
-    throw createError({
-      statusCode: 405,
-      statusMessage: "Method Not Allowed - Use POST",
-    });
-  }
 
   console.log("Contact API endpoint hit with POST request"); // Debug log
 
