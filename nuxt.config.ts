@@ -4,7 +4,6 @@ export default defineNuxtConfig({
     public: {
       baseURL: process.env.NUXT_PUBLIC_BASE_URL || 'http://localhost:3000'
     }
-    // Removed ssr from runtimeConfig - it doesn't belong here
   },
 
   // CSS and PostCSS
@@ -33,18 +32,26 @@ export default defineNuxtConfig({
     experimental: {
       wasm: true
     },
-    // Remove custom output config - let Cloudflare Pages handle this
     prerender: {
       failOnError: false,
       crawlLinks: true,
     },
-    // Add this for better API route handling on Cloudflare
+    // Cloudflare-specific settings
+    cloudflare: {
+      pages: {
+        routes: {
+          exclude: ["/api/*"]
+        }
+      }
+    },
+    // Route rules for API
     routeRules: {
       '/api/**': { 
+        cors: true,
         headers: { 
           'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+          'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, Accept'
         }
       }
     }
@@ -55,8 +62,8 @@ export default defineNuxtConfig({
     payloadExtraction: false,
   },
 
-  // SSR configuration - keep this at root level
-  ssr: false, // You have SPA mode enabled
+  // SSR configuration
+  ssr: false, // SPA mode enabled
 
   // App configuration
   app: {
@@ -66,9 +73,9 @@ export default defineNuxtConfig({
   // Compatibility date
   compatibilityDate: "2025-01-25",
 
-  // Add build configuration for better Cloudflare compatibility
+  // Build configuration
   build: {
     transpile: ['@nuxt/ui']
-  },
+  }
 
 });
