@@ -1,19 +1,18 @@
 // File: server/api/contact.post.js
-// The .post.js extension ensures only POST requests are accepted
-
 export default defineEventHandler(async (event) => {
-  // Set CORS headers for Cloudflare
+  console.log("=== Contact API Debug Info ===");
+  console.log("Method:", getMethod(event));
+  console.log("URL:", getRequestURL(event));
+  console.log("Headers:", getHeaders(event));
+
+  // Set CORS headers
   setHeader(event, "Access-Control-Allow-Origin", "*");
   setHeader(event, "Access-Control-Allow-Methods", "POST, OPTIONS");
   setHeader(event, "Access-Control-Allow-Headers", "Content-Type");
 
-  console.log("Contact API endpoint hit with POST request"); // Debug log
-
   try {
-    // Read the request body
     const body = await readBody(event);
-
-    console.log("Received form data:", body); // Debug log
+    console.log("Request body received:", body);
 
     // Validate required fields
     if (!body.name || !body.email || !body.subject || !body.message) {
@@ -46,28 +45,23 @@ export default defineEventHandler(async (event) => {
       redirect: false,
     };
 
-    console.log("Sending to Web3Forms..."); // Debug log
+    console.log("Sending to Web3Forms:", formData);
 
-    // Make request to Web3Forms using native fetch
+    // Make request to Web3Forms
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
-        "User-Agent": "VeraVerde-Website/1.0",
       },
       body: JSON.stringify(formData),
     });
 
-    if (!response.ok) {
-      console.log(
-        "Web3Forms response not OK:",
-        response.status,
-        response.statusText
-      );
-      const errorText = await response.text();
-      console.log("Web3Forms error details:", errorText);
+    console.log("Web3Forms response status:", response.status);
 
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.log("Web3Forms error:", response.status, errorText);
       throw createError({
         statusCode: response.status,
         statusMessage: `Web3Forms API error: ${response.statusText}`,
@@ -75,33 +69,22 @@ export default defineEventHandler(async (event) => {
     }
 
     const result = await response.json();
-    console.log("Web3Forms response:", result); // Debug log
+    console.log("Web3Forms success:", result);
 
-    // Return success response
     return {
       success: true,
       message: result.message || "Message sent successfully!",
     };
   } catch (error) {
-    console.error("Contact API error:", error);
+    console.error("=== Contact API Error ===", error);
 
-    // Handle different types of errors
     if (error.statusCode) {
-      // Already a proper HTTP error - re-throw it
       throw error;
-    } else if (error.name === "TypeError" && error.message.includes("fetch")) {
-      // Network/fetch error
-      throw createError({
-        statusCode: 503,
-        statusMessage:
-          "Unable to connect to email service. Please try again later.",
-      });
-    } else {
-      // Generic server error
-      throw createError({
-        statusCode: 500,
-        statusMessage: "Internal server error. Please try again.",
-      });
     }
+
+    throw createError({
+      statusCode: 500,
+      statusMessage: "Internal server error: " + error.message,
+    });
   }
 });
