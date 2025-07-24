@@ -35,7 +35,7 @@ export default defineEventHandler(async (event) => {
 
     // Prepare data for Web3Forms
     const formData = {
-      access_key: "29c3e72f-88ed-43c6-a882-847719babcc2",
+      access_key: process.env.WEB3FORMS_ACCESS_KEY,
       name: body.name.trim(),
       email: body.email.trim(),
       phone: body.phone?.trim() || "",
