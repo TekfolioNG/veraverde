@@ -1,0 +1,12 @@
+# wrangler.toml - Minimal configuration for Cloudflare Pages
+# Only include this if you need specific Pages Functions configuration
+
+name = "veraverde"
+compatibility_date = "2025-07-24"
+
+# Pages-specific configuration (optional)
+[env.production]
+compatibility_date = "2024-07-24"
+
+# If you need environment variables, set them in Cloudflare Dashboard
+# NOT in this file for Pages projects
