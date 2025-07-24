@@ -6,4 +6,4 @@ command = "pnpm run build"
 cwd = "."
 
 # For Nuxt 3 with cloudflare-pages preset
-pages_build_output_dir = ".output/public"
+pages_build_output_dir = "dist"
