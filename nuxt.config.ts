@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   // Runtime configuration
   runtimeConfig: {
     public: {
-      baseURL: process.env.NUXT_PUBLIC_BASE_URL || 'http://localhost:3000'
+    baseURL: process.env.NUXT_PUBLIC_BASE_URL || 'https://veraverde.org'
     }
   },
 
