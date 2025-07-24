@@ -49,13 +49,18 @@ const validateForm = () => {
   return errors
 }
 
-// Submit form function - PROXY VERSION
+// Enhanced submitForm function with debugging
 const submitForm = async (event) => {
   event.preventDefault()
+
+  console.log('=== Form Submission Debug ===');
+  console.log('Current URL:', window.location.href);
+  console.log('Form data:', formData);
 
   // Client-side validation
   const validationErrors = validateForm()
   if (validationErrors.length > 0) {
+    console.log('Validation errors:', validationErrors);
     formStatus.value = {
       loading: false,
       success: false,
@@ -78,21 +83,48 @@ const submitForm = async (event) => {
   }
 
   try {
-    console.log('Submitting form via API proxy...') // Debug log
+    console.log('Submitting form via API proxy...');
+    console.log('API endpoint:', '/api/contact');
+
+    const requestBody = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message
+    };
+
+    console.log('Request body:', requestBody);
 
     // Use Nuxt's $fetch to call our API route
     const result = await $fetch('/api/contact', {
       method: 'POST',
-      body: {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        subject: formData.subject,
-        message: formData.message
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: requestBody,
+      timeout: 30000, // 30 second timeout
+      retry: 0, // No retries for debugging
+      onRequest({ request, options }) {
+        console.log('Making request to:', request);
+        console.log('Request options:', options);
+      },
+      onRequestError({ request, options, error }) {
+        console.error('Request error:', error);
+        console.log('Failed request:', request);
+        console.log('Request options:', options);
+      },
+      onResponse({ request, response, options }) {
+        console.log('Response received:', response.status, response.statusText);
+        console.log('Response headers:', Object.fromEntries(response.headers.entries()));
+      },
+      onResponseError({ request, response, options }) {
+        console.error('Response error:', response.status, response.statusText);
+        console.log('Error response:', response);
       }
     })
 
-    console.log('API response:', result) // Debug log
+    console.log('API response:', result);
 
     if (result.success) {
       formStatus.value = {
@@ -111,23 +143,46 @@ const submitForm = async (event) => {
       throw new Error(result.message || 'Failed to send message')
     }
   } catch (error) {
-    console.error('Form submission error:', error) // Debug log
+    console.error('=== Form Submission Error ===');
+    console.error('Error object:', error);
+    console.error('Error name:', error.name);
+    console.error('Error message:', error.message);
+    console.error('Error stack:', error.stack);
+
+    if (error.data) {
+      console.error('Error data:', error.data);
+    }
+
+    if (error.response) {
+      console.error('Error response:', error.response);
+    }
 
     let errorMessage = 'An unexpected error occurred. Please try again.'
 
-    // Handle different error types
+    // Handle different error types with more specific logging
     if (error.statusCode === 400) {
-      errorMessage = error.statusMessage || 'Please check your form data and try again.'
+      console.log('Bad Request Error (400)');
+      errorMessage = error.data?.message || error.statusMessage || 'Please check your form data and try again.'
     } else if (error.statusCode === 408) {
+      console.log('Timeout Error (408)');
       errorMessage = 'Request timed out. Please try again.'
     } else if (error.statusCode === 429) {
+      console.log('Rate Limit Error (429)');
       errorMessage = 'Too many requests. Please wait a moment and try again.'
     } else if (error.statusCode >= 500) {
+      console.log('Server Error (5xx):', error.statusCode);
       errorMessage = 'Server error occurred. Please try again in a few minutes.'
     } else if (error.data?.message) {
+      console.log('Error with data message:', error.data.message);
       errorMessage = error.data.message
     } else if (error.message) {
+      console.log('Error with message:', error.message);
       errorMessage = error.message
+    }
+
+    // Add debug info to error message in development
+    if (process.dev) {
+      errorMessage += ` (Debug: ${error.statusCode || 'Unknown'} - ${error.name || 'Unknown Error'})`;
     }
 
     formStatus.value = {
@@ -141,6 +196,8 @@ const submitForm = async (event) => {
       formStatus.value.message = ''
       formStatus.value.error = false
     }, 8000)
+
+    console.log('=== End Form Submission Error ===');
   }
 }
 
