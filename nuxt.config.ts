@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     preset: "cloudflare-pages",
     output: {
       dir: '.output',
+      publicDir: '.output/public'
     },
     experimental: {
       wasm: true
@@ -39,12 +40,13 @@ export default defineNuxtConfig({
       failOnError: false,
       crawlLinks: true,
     },
+    
     // Route rules for API
     routeRules: {
       '/api/**': { 
         cors: true,
         headers: { 
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': '',
           'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
           'Access-Control-Allow-Headers': 'Content-Type, Accept'
         }
@@ -58,7 +60,7 @@ export default defineNuxtConfig({
   },
 
   // SSR configuration
-  ssr: true, // SPA mode enabled
+  ssr: false, // SPA mode enabled
 
   // App configuration
   app: {
