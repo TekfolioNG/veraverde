@@ -1,0 +1,11 @@
+{
+"compatibility_date": "2025-07-24",
+"pages_build_output_dir": ".output/public",
+"routes": [
+    {
+    "method": "POST",
+    "path": "/api/contact",
+    "worker": "contact"
+    }
+]
+}
