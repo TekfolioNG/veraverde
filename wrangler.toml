@@ -1,12 +1,9 @@
-# wrangler.toml - Minimal configuration for Cloudflare Pages
-# Only include this if you need specific Pages Functions configuration
+name = "veraverde-website"
+compatibility_date = "2025-01-25"
 
-name = "veraverde"
-compatibility_date = "2025-07-24"
+[build]
+command = "pnpm run build"
+cwd = "."
 
-# Pages-specific configuration (optional)
-[env.production]
-compatibility_date = "2024-07-24"
-
-# If you need environment variables, set them in Cloudflare Dashboard
-# NOT in this file for Pages projects
+# For Nuxt 3 with cloudflare-pages preset
+pages_build_output_dir = "dist"
