@@ -39,14 +39,6 @@ export default defineNuxtConfig({
       failOnError: false,
       crawlLinks: true,
     },
-    // Cloudflare-specific settings
-    cloudflare: {
-      pages: {
-        routes: {
-          exclude: ["/api/*"]
-        }
-      }
-    },
     // Route rules for API
     routeRules: {
       '/api/**': { 
