@@ -29,6 +29,10 @@ export default defineNuxtConfig({
   // Nitro configuration for Cloudflare Pages
   nitro: {
     preset: "cloudflare-pages",
+    output: {
+      dir: '.output',
+      publicDir: '.output/public'
+    },
     experimental: {
       wasm: true
     },
