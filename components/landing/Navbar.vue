@@ -49,6 +49,7 @@ const menuitems = [
 
     ]
   },
+  { title: "NEWS & EVENTS", path: "/news-events", hasDropdown: false },
   { title: "CONTACT US", path: "/contact", hasDropdown: false },
 ];
 
@@ -70,7 +71,7 @@ const mobileWorkDropdownOpen = ref(false);
         <div class="hidden md:flex items-center">
           <!-- Centered Nav Items -->
           <nav class="absolute left-1/2 transform -translate-x-1/2">
-            <ul class="flex space-x-6 lg:space-x-16">
+            <ul class="flex space-x-6 lg:space-x-12">
               <li v-for="item in menuitems" :key="item.title" class="relative">
                 <NuxtLink :to="item.path" @mouseenter="item.hasDropdown ? workDropdownOpen = true : null"
                   @mouseleave="item.hasDropdown ? workDropdownOpen = false : null" :class="[
