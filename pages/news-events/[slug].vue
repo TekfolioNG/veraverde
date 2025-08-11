@@ -58,7 +58,7 @@ useHead({
                         </NuxtLink>
                         <NuxtLink to="/news-events"
                             class="text-gray-700 hover:text-[#99cc33] font-medium text-base sm:text-lg transition-colors cursor-pointer">
-                            Back to News & Events
+                            News & Events
                         </NuxtLink>
                     </nav>
                 </div>
